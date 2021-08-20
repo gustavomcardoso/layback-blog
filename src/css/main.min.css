@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2:300,400,700|Oswald:300&display=swap");@import url("https://fonts.googleapis.com/css?family=Graduate&display=swap");/*! Bootstrap v4.3.1 (https://getbootstrap.com/) Copyright 2011-2019 The Bootstrap Authors Copyright 2011-2019 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+@import url("https://fonts.googleapis.com/css?family=Exo+2:300,400,700|Oswald:300&display=swap");@import url("https://fonts.googleapis.com/css?family=Graduate&display=swap");@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");/*! Bootstrap v4.3.1 (https://getbootstrap.com/) Copyright 2011-2019 The Bootstrap Authors Copyright 2011-2019 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
 *,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}
 html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
 article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
@@ -782,6 +782,8 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .invisible{visibility:hidden !important}
 @font-face{font-family:"Octin College";src:url(../fonts/octin_college_rg.ttf)}
 @font-face{font-family:"Octin Bold";src:url(../fonts/Octin_College_Bold.ttf)}
+@font-face{font-family:"Inter";src:url(../fonts/Inter-Medium.ttf)}
+@font-face{font-family:"Graduate";src:url(../fonts/Graduate-Regular.ttf)}
 .c-amarelo{color:#f6d351 !important}
 .c-amarelo-event:hover,.c-amarelo-event:active,.c-amarelo-event:focus{color:#f6d351 !important}
 .bgc-amarelo{background-color:#f6d351 !important}
@@ -844,6 +846,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .navbar .redes img{margin:0 24px}
 .navbar_expand{background:#121212 !important;min-height:100vh}
 .nav-shadow{background:#121212}
+.nav-white{background:#fff}
 .modal .close{margin-top:15px;margin-left:15px}
 .modal .modal-dialog{margin-top:100px}
 .modal .modal-dialog .modal-content{background:transparent}
@@ -856,11 +859,19 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .btn-primary.bgc-amarelo:hover{background:#fff !important;color:#404041}
 .btn-primary.bgc-gold{-webkit-transition:.5s;transition:.5s}
 .btn-primary.bgc-gold:hover{background:#404041 !important;color:#fff}
+.btn-primary.bgc-amarelo-blog{-webkit-transition:.5s;transition:.5s}
+.btn-primary.bgc-amarelo-blog:hover{background:#121212 !important;color:#f6d351 !important}
+.bgc-amarelo-blog{padding:8px 20px;font-size:.75rem}
 .sucesso-modal{display:none}
 input.error,select.error,textarea.error{border:2px solid #ff3737}
 input.valid,select.valid,textarea.valid{border:2px solid #20a200}
 label.error{font-size:16px;line-height:19px;color:#ff3737}
+.octin{font-family:"Octin College",cursive !important}
+.octin-bold{font-family:"Octin Bold",cursive !important}
+.graduate{font-family:"Graduate",cursive !important}
 a:focus,a:active{outline:initial;-webkit-box-shadow:initial;box-shadow:initial}
+a span{color:#121212}
+a:hover{text-decoration:none}
 .menu-span,.box-header{font-family:"Graduate",cursive}
 #carousel-noticias .flickity-page-dots{text-align:left}
 #carousel-noticias .flickity-page-dots .dot{background-color:#404041 !important;opacity:1}
@@ -1632,6 +1643,8 @@ section .row{padding:100px 0}
 #error-404 .col-lg-8 img{width:50%}
 #curtimos{background-image:url(../../src/img/banners/lg/bg-estilo-layback.jpg);background-repeat:no-repeat;background-position:center;background-size:contain;padding:80px 0}
 #curtimos .row{min-height:620px}
+#fullpageblog .section.two .row{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+#collapseblog ul li{margin:0 16px}
 }@media(min-width:1200px){.container{max-width:1140px}
 .col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}

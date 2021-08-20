@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
         <div id="#menu" class="container effect-menu">
             <li class="d-block">
                 <a href="#fullpage">
-                    <img src="<?php echo $directory ?>/..assets/imgs/logo.svg" alt="" srcset=""></a>
+                    <img src="<?php echo $directory ?>/src/img/logo.svg" alt="" srcset=""></a>
             </li>
-            <button class="navbar-toggler d-lg-none off collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none off collapsed" type="button" data-toggle="collapse" data-target="#collapsehome" aria-controls="collapsehome" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="hambuguer">
                     <div class="one"></div>
                     <div class="two"></div>
@@ -13,10 +13,8 @@
                 </span>
                 <span class="menu-span pl-3"> MENU </span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto">
-                </ul>
-                <ul class="navbar-nav mt-3 mt-lg-0">
+            <div class="collapse navbar-collapse" id="collapsehome">
+                <ul class="navbar-nav mt-3 mt-lg-0 ml-auto">
                     <li class="nav-item mb-3 mb-lg-0">
                         <a class="nav-link" href="#fullpage">Home</a>
                     </li>

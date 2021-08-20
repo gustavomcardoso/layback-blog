@@ -203,9 +203,11 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   if (scroll >= beginTop) {
-    $("nav").addClass("nav-shadow");
+    $("#nav").addClass("nav-shadow");
+    $("#navblog").addClass("nav-white");
   } else {
-    $("nav").removeClass("nav-shadow");
+    $("#nav").removeClass("nav-shadow");
+    $("#navblog").removeClass("nav-white");
   }
 });
 $(document).ready(function () {

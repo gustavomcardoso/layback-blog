@@ -5,7 +5,7 @@
  * @author   <Author>
  * @version  1.0.0
  * @package  <Package>
- */
+ */ 
 
 get_header();
 include get_template_directory() . ('/templates/nav-blog.php');
@@ -21,6 +21,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post()?>
 
 <?php if ($i == 1) :  ?>
 	<section class="section two">
+<?php elseif ($i > 2) : ?>
+	<section class="section three">
 <?php else : ?>
 	<section class="section one">
 <?php endif; ?>

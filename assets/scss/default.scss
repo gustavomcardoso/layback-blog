@@ -4,6 +4,12 @@ a {
         outline: initial;
         box-shadow: initial;
     }
+    span{
+        color: $preto;
+    }
+    &:hover {       
+            text-decoration: none;
+    }
 }
 
 .menu-span,
@@ -744,6 +750,14 @@ a {
                 }
             }
         }
+    }
+
+    #collapseblog{
+                ul{
+                    li{
+                        margin: 0px 16px;
+                    }
+                }
     }
 
 }

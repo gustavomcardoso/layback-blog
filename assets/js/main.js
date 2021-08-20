@@ -30,7 +30,7 @@ $('#carousel-mobile-onebeer, #carousel-mobile-twobeer, #carousel-mobile-threebee
 });
 
 
-$('.nav-item').click(function() {
+$('.nav-item').click(function () {
     $('.effect-menu').addClass('off');
     $('.effect-menu').removeClass('on');
     $('body').css('overflow', 'auto');
@@ -42,10 +42,10 @@ $('.nav-item').click(function() {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     if ($(window).width() > 992) {
 
-  
+
 
     } else {
         $('#carousel-noticias').flickity({
@@ -72,12 +72,12 @@ $(document).ready(function() {
             contain: true,
             prevNextButtons: false,
             pageDots: true,
-        
+
         });
     }
 
     //menu
-    $(document).on('click', '.effect-menu .off', function(e) {
+    $(document).on('click', '.effect-menu .off', function (e) {
         e.preventDefault();
         //QUANDO ABRE
         $(this).removeClass('off');
@@ -88,7 +88,7 @@ $(document).ready(function() {
         $(".menu-span").addClass('d-none');
     });
 
-    $(document).on('click', '.effect-menu .on', function(e) {
+    $(document).on('click', '.effect-menu .on', function (e) {
         e.preventDefault();
         //QUANDO FECHA
         $(this).addClass('off');
@@ -102,23 +102,26 @@ $(document).ready(function() {
 
 });
 
-$(window).scroll(function() {
+$(window).scroll(function () {
 
     var beginTop = 50;
     var scroll = $(window).scrollTop();
 
     if (scroll >= beginTop) {
-        $("nav").addClass("nav-shadow");
+        $("#nav").addClass("nav-shadow");
+        $("#navblog").addClass("nav-white");
 
     } else {
-        $("nav").removeClass("nav-shadow");
+        $("#nav").removeClass("nav-shadow");
+        $("#navblog").removeClass("nav-white");
     }
 });
 
 
 
 
-$(document).ready(function() {
+
+$(document).ready(function () {
     var validatorModal = $("#formModal").validate({
         rules: {
             nome: {
@@ -196,7 +199,7 @@ $(document).ready(function() {
 $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
-    .click(function(event) {
+    .click(function (event) {
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname
@@ -207,7 +210,7 @@ $('a[href*="#"]')
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 500, function() {
+                }, 500, function () {
                     var $target = $(target);
                     $target.focus();
                     if ($target.is(":focus")) {
@@ -220,3 +223,4 @@ $('a[href*="#"]')
             }
         }
     });
+

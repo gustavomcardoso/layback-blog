@@ -134,6 +134,9 @@
 .nav-shadow {
 	background: $preto;
 }
+.nav-white {
+	background: $branco;
+}
 
 .modal {
 	.close {
@@ -228,9 +231,6 @@ label.error {
 }
 .octin-bold{
   font-family: $OctinBold !important;
-}
-.inter{
-  font-family: $Inter !important;
 }
 .graduate{
   font-family: $Graduate !important;
