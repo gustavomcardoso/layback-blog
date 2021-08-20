@@ -10,85 +10,54 @@
 get_header();
 include get_template_directory() . ('/templates/nav-blog.php');
 
-// if ( have_posts() ) {
-// 	while ( have_posts() ) {
-// 		the_post();
 ?>
-<!-- <article>
-	<header>
-		<h1><?php the_title(); ?></h1>
-		</header>
-		<?php the_content(); ?>
-		</article>	 -->
-		<!-- }
-	} -->
+
+<div id="fullpageblog">
 	
-<div id="fullpage">
+	<!-- Start the Loop. -->
+<?php
+$i = 0;
+if ( have_posts() ) : while ( have_posts() ) : the_post()?>
 
-	<section class="section one">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12">
-					<?php get_the_post_thumbnail() ?>
-				</div>
-				<div class="col-lg-6 col-12">
-					<h2 class="octin post-tittle">
-						<?php the_title(); ?>
-					</h2>
-					<span class="date">
-						<?php get_the_date();?>
-					</span>
-
-					<button class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
-						LEIA MAIS
-					</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
+<?php if ($i == 1) :  ?>
 	<section class="section two">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12">
-					<h2 class="octin post-tittle">
-						<?php the_title(); ?>
-					</h2>
-					<span class="date">
-						<?php get_the_date();?>
-					</span>
-					<button class="btn bgc-amarelo-blog bgc-amarelo c-preto">
-						LEIA MAIS
-					</button>
-				</div>
-				<div class="col-lg-6 col-12">
-					<?php get_the_post_thumbnail() ?>
+<?php else : ?>
+	<section class="section one">
+<?php endif; ?>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<?php get_the_post_thumbnail();?>
+					</div>
+					<div class="col-lg-6 col-12">
+						<h2 class="octin post-tittle">
+							<?php the_title(); ?>
+						</h2>
+						<small>
+							<?php the_time('F jS, Y'); ?>
+						</small>
+
+						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute();?>" class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
+							LEIA MAIS
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="section three">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12">
-					<?php get_the_post_thumbnail() ?>
-				</div>
-				<div class="col-lg-6 col-12">
-					<h2 class="octin post-tittle">
-						<?php the_title(); ?>
-					</h2>
-					<span class="date">
-						<?php get_the_date();?>
-					</span>
-					<button class="btn bgc-amarelo-blog bgc-amarelo c-preto">
-						LEIA MAIS
-					</button>
-				</div>
-			</div>
-		</div>
-	</section>
+<?php
+$i++;
+endwhile; else : ?>
 
+
+<!-- The very first "if" tested to see if there were any Posts to -->
+<!-- display.  This "else" part tells what do if there weren't any. -->
+<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+
+<!-- REALLY stop The Loop. -->
+<?php endif; ?>
 </div>
 
 

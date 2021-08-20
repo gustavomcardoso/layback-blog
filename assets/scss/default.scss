@@ -735,6 +735,17 @@ a {
             min-height: 620px;
         }
     }
+
+    #fullpageblog{
+        .section{
+            &.two {
+                .row{
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: $xl) {
