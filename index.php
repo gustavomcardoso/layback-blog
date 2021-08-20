@@ -28,11 +28,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post()?>
 <?php endif; ?>
 
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-12">
-						<?php get_the_post_thumbnail();?>
+				<div class="row align-items-center">
+					<div class="col-lg-8 col-12">
+						<div class="postthumb">
+							<?php the_post_thumbnail();?>
+						</div>
 					</div>
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-4 col-12">
 						<h2 class="octin post-tittle">
 							<?php the_title(); ?>
 						</h2>

@@ -1645,6 +1645,8 @@ section .row{padding:100px 0}
 #curtimos .row{min-height:620px}
 #fullpageblog .section.two .row{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 #collapseblog ul li{margin:0 16px}
+.postthumb{position:relative;overflow:hidden;width:700px;height:500px}
+.postthumb img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 }@media(min-width:1200px){.container{max-width:1140px}
 .col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}

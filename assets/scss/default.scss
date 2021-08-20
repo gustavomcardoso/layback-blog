@@ -759,6 +759,18 @@ a {
                     }
                 }
     }
+    .postthumb{
+        position: relative;
+        overflow: hidden;
+        width: 700px;
+        height: 500px;
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 
 }
 
