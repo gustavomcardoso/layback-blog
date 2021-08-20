@@ -10,6 +10,9 @@
 /**
  * Credit in admin footer
  */
+
+add_theme_support( 'post-thumbnails' );
+
 function gulp_wp_admin_footer() {
 	echo 'Developed by <a href="http://author.com" target="_blank" rel="noreferrer noopener">Author Name</a>';
 }
