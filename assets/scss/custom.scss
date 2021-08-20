@@ -189,6 +189,17 @@
 		color: $branco;
 	}
 }
+.btn-primary.bgc-amarelo-blog {
+  transition: 0.5s;
+  &:hover {
+    background: $preto !important;
+    color: $amarelo !important;
+  }
+}
+.bgc-amarelo-blog {
+  padding: 8px 20px;
+  font-size: 0.75rem;
+}
 
 .sucesso-modal {
 	display: none;
@@ -211,3 +222,17 @@ label.error {
 	line-height: 19px;
 	color: #ff3737;
 }
+
+.octin{
+  font-family: $Octin !important;
+}
+.octin-bold{
+  font-family: $OctinBold !important;
+}
+.inter{
+  font-family: $Inter !important;
+}
+.graduate{
+  font-family: $Graduate !important;
+}
+

@@ -7,6 +7,8 @@ $xs: 0px;
 //IMPORTACAO DE FONTES
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,700|Oswald:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
 @font-face {
     font-family: "Octin College";
@@ -18,7 +20,20 @@ $xs: 0px;
     src: url(../fonts/Octin_College_Bold.ttf);
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Graduate";
+    src: url("../fonts/Graduate-Regular.ttf");
+}
+
 $Graduate: 'Graduate', cursive;
+$Inter: 'Inter', cursive;
+$Octin: 'Octin College', cursive;
+$OctinBold: 'Octin Bold', cursive;
 
 $amarelo: #F6D351;
 $gold: #CBA749;

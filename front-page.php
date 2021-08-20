@@ -1,7 +1,10 @@
 
 <?php get_header();
-
+        include get_template_directory() . ('/templates/nav-home.php');
 ?>
+
+
+
 <div id="fullpage" class="pagesections">
 
     <section id="header">
