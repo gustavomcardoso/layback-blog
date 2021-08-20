@@ -1,213 +1,213 @@
 @media screen and (max-width: $lg) {
-  .carousel:after {
-    content: "";
-  }
+	.carousel:after {
+		content: "";
+	}
 }
 
 .btn-primary {
-  background: $white;
-  color: $preto;
-  font-weight: bold;
-  border: 0;
-  padding: 16px 48px !important;
-  &:hover {
-    background: $amarelo;
-    color: $preto;
-  }
+	background: $white;
+	color: $preto;
+	font-weight: bold;
+	border: 0;
+	padding: 16px 48px !important;
+	&:hover {
+		background: $amarelo;
+		color: $preto;
+	}
 }
 .flickity-page-dots .dot {
-  margin: 0 5px;
+	margin: 0 5px;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: #4a4a4a;
+	background: #4a4a4a;
 }
 .modal .close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
 }
 
 .navbar {
-  position: fixed;
-  z-index: 50;
-  width: 100%;
-  transition: 0.5s;
-  align-items: start;
-  justify-content: start;
-  .navbar-brand {
-    li {
-      display: block;
-    }
-  }
-  .nav-item {
-    .nav-link {
-      text-transform: uppercase;
-      font-family: Octin Bold;
-      font-size: 20px;
-      line-height: 23px;
-      color: $amarelo;
-      &:hover {
-        color: $branco;
-      }
-      &:active {
-        color: $amarelo !important;
-      }
-    }
-  }
-  .navbar-toggler {
-    div {
-      opacity: 1;
-      width: 30px;
-      height: 3px;
-      margin-bottom: 4px;
-      background: $amarelo;
-      border-radius: 5px;
-      transition: 0.5s;
-    }
-    .one {
-      transform: rotate(45deg);
-    }
-    .two {
-      transform: rotate(-45deg);
-      margin-top: -7px;
-    }
-    .three {
-      opacity: 0;
-    }
-    .menu {
-      display: none;
-    }
-    border: 0;
-    text-transform: uppercase;
-    color: $amarelo;
-    &:focus,
-    &:hover,
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 0;
-      border: 0;
-    }
-  }
-  .navbar-toggler.collapsed {
-    border: 0;
-    .hambuguer {
-      float: left;
-    }
-    .menu {
-      font-size: 16px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
-      padding-left: 8px;
-      color: $amarelo;
-      float: right;
-    }
-    .three {
-      opacity: 1;
-    }
-    div {
-      width: 30px;
-      height: 3px;
-      margin-top: 0;
-      margin-bottom: 4px;
-      background: $amarelo;
-      border-radius: 5px;
-      transition: 0.5s;
-      transform: rotate(0deg);
-    }
-  }
-  .redes {
-    text-align: center;
-    padding-top: 40px;
-    img {
-      margin: 0 24px;
-    }
-  }
+	position: fixed;
+	z-index: 50;
+	width: 100%;
+	transition: 0.5s;
+	align-items: start;
+	justify-content: start;
+	.navbar-brand {
+		li {
+			display: block;
+		}
+	}
+	.nav-item {
+		.nav-link {
+			text-transform: uppercase;
+			font-family: Octin Bold;
+			font-size: 20px;
+			line-height: 23px;
+			color: $amarelo;
+			&:hover {
+				color: $branco;
+			}
+			&:active {
+				color: $amarelo !important;
+			}
+		}
+	}
+	.navbar-toggler {
+		div {
+			opacity: 1;
+			width: 30px;
+			height: 3px;
+			margin-bottom: 4px;
+			background: $amarelo;
+			border-radius: 5px;
+			transition: 0.5s;
+		}
+		.one {
+			transform: rotate(45deg);
+		}
+		.two {
+			transform: rotate(-45deg);
+			margin-top: -7px;
+		}
+		.three {
+			opacity: 0;
+		}
+		.menu {
+			display: none;
+		}
+		border: 0;
+		text-transform: uppercase;
+		color: $amarelo;
+		&:focus,
+		&:hover,
+		&:active {
+			outline: none;
+			box-shadow: 0 0 0 0;
+			border: 0;
+		}
+	}
+	.navbar-toggler.collapsed {
+		border: 0;
+		.hambuguer {
+			float: left;
+		}
+		.menu {
+			font-size: 16px;
+			line-height: 18px;
+			display: flex;
+			align-items: center;
+			padding-left: 8px;
+			color: $amarelo;
+			float: right;
+		}
+		.three {
+			opacity: 1;
+		}
+		div {
+			width: 30px;
+			height: 3px;
+			margin-top: 0;
+			margin-bottom: 4px;
+			background: $amarelo;
+			border-radius: 5px;
+			transition: 0.5s;
+			transform: rotate(0deg);
+		}
+	}
+	.redes {
+		text-align: center;
+		padding-top: 40px;
+		img {
+			margin: 0 24px;
+		}
+	}
 }
 
 .navbar_expand {
-  background: $preto !important;
-  min-height: 100vh;
+	background: $preto !important;
+	min-height: 100vh;
 }
 
 .nav-shadow {
-  background: $preto;
+	background: $preto;
 }
 
 .modal {
-  .close {
-    margin-top: 15px;
-    margin-left: 15px;
-  }
-  .modal-dialog {
-    margin-top: 100px;
-    .modal-content {
-      background: transparent;
-      h3 {
-        font-family: Octin College;
-      }
-      .modal-header,
-      .modal-footer {
-        border: 0;
-      }
-      .modal-body {
-        input {
-          background: #ffffff;
-          border-radius: 4px;
-          height: 48px;
-        }
-      }
-    }
-  }
+	.close {
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	.modal-dialog {
+		margin-top: 100px;
+		.modal-content {
+			background: transparent;
+			h3 {
+				font-family: Octin College;
+			}
+			.modal-header,
+			.modal-footer {
+				border: 0;
+			}
+			.modal-body {
+				input {
+					background: #ffffff;
+					border-radius: 4px;
+					height: 48px;
+				}
+			}
+		}
+	}
 }
 
 .modal-backdrop.show {
-  opacity: 0.9;
+	opacity: 0.9;
 }
 
 .btn {
-  &:active,
-  &:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0;
-  }
+	&:active,
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 0 0;
+	}
 }
 
 .btn-primary.bgc-amarelo {
-  transition: 0.5s;
-  &:hover {
-    background: $branco !important;
-    color: $cinza;
-  }
+	transition: 0.5s;
+	&:hover {
+		background: $branco !important;
+		color: $cinza;
+	}
 }
 
 .btn-primary.bgc-gold {
-  transition: 0.5s;
-  &:hover {
-    background: $cinza !important;
-    color: $branco;
-  }
+	transition: 0.5s;
+	&:hover {
+		background: $cinza !important;
+		color: $branco;
+	}
 }
 
 .sucesso-modal {
-  display: none;
+	display: none;
 }
 
 input.error,
 select.error,
 textarea.error {
-  border: 2px solid #ff3737;
+	border: 2px solid #ff3737;
 }
 
 input.valid,
 select.valid,
 textarea.valid {
-  border: 2px solid #20a200;
+	border: 2px solid #20a200;
 }
 
 label.error {
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff3737;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ff3737;
 }

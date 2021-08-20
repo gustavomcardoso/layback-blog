@@ -18,7 +18,7 @@ function gulp_wp_theme_scripts() {
 	 */
 	// $theme_handle_prefix = 'theme-name';
 	// wp_enqueue_script( $theme_handle_prefix . '-scripts', get_template_directory_uri() . '/assets/js/' . $theme_handle_prefix . '.min.js', array( 'jquery' ), '1.0.0', true );
-	
+
 	wp_register_script('jquery' , get_template_directory_uri() . '/assets/js/jquery-3.5.1.min.js' , array(), 1, 1, 1);
 	wp_enqueue_script('jquery');
 
@@ -37,11 +37,8 @@ function gulp_wp_theme_scripts() {
 	wp_register_script('flickity' , 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), 1, 1, 1);
 	wp_enqueue_script('flickity');
 
-	wp_register_script('forms' , get_template_directory_uri() . '/assets/js/forms.js' , array(), 1, 1, 1);
-	wp_enqueue_script('forms');
-	
-	wp_register_script('main' , get_template_directory_uri() . '/assets/js/main.js' , array(), 1, 1, 1);
-	wp_enqueue_script('main');
+	wp_register_script('custom' , get_template_directory_uri() . '/src/js/custom.min.js' , array(), 1, 1, 1);
+	wp_enqueue_script('custom');
 
 }
 add_action( 'wp_enqueue_scripts', 'gulp_wp_theme_scripts' );

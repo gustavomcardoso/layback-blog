@@ -86,7 +86,7 @@ a {
         .row {
             min-height: 100vh;
         }
-        background: url(../imgs/maior/bg.jpg);
+        background: url(../../src/img/maior/bg.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -108,7 +108,7 @@ a {
         }
     }
     .menor {
-        background-image: url(../imgs/maior/menor-b.png) !important;
+        background-image: url(../../src/img/maior/menor-b.png) !important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat !important;
@@ -132,16 +132,16 @@ a {
             background-repeat: no-repeat;
             background-position: center;
             &.banner-1 {
-                background-image: url(../imgs/banners/mobile/bg-1.jpg);
+                background-image: url(../../src/img/banners/mobile/bg-1.jpg);
             }
             &.banner-2 {
-                background-image: url(../imgs/banners/mobile/bg-2.jpg);
+                background-image: url(../../src/img/banners/mobile/bg-2.jpg);
             }
             &.banner-3 {
-                background-image: url(../imgs/banners/mobile/bg-3.jpg);
+                background-image: url(../../src/img/banners/mobile/bg-3.jpg);
             }
             &.banner-4 {
-                background-image: url(../imgs/banners/mobile/bg-4.jpg);
+                background-image: url(../../src/img/banners/mobile/bg-4.jpg);
             }
         }
         .flickity-page-dots {
@@ -161,35 +161,35 @@ a {
         }
     }
     #one {
-        background-image: url(../imgs/banners/mobile/banner-one.png);
+        background-image: url(../../src/img/banners/mobile/banner-one.png);
         background-size: cover;
     }
     #parkbeer {
-        background: url(../imgs/banners/lg/morcegos.png);
+        background: url(../../src/img/banners/lg/morcegos.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
     #onebeer {
-        background-image: url(../imgs/banners/mobile/onebeer.jpg);
+        background-image: url(../../src/img/banners/mobile/onebeer.jpg);
     }
     #twobeer {
-        background-image: url(../imgs/banners/mobile/twobeer.jpg);
+        background-image: url(../../src/img/banners/mobile/twobeer.jpg);
     }
     #threebeer {
-        background-image: url(../imgs/banners/mobile/threebeer.jpg);
+        background-image: url(../../src/img/banners/mobile/threebeer.jpg);
     }
     #fourbeer {
-        background-image: url(../imgs/banners/mobile/fourbeer.jpg);
+        background-image: url(../../src/img/banners/mobile/fourbeer.jpg);
     }
     #fivebeer {
-        background-image: url(../imgs/banners/mobile/fivebeer.jpg);
+        background-image: url(../../src/img/banners/mobile/fivebeer.jpg);
     }
     #sixbeer {
-        background-image: url(../imgs/banners/mobile/sixbeer.jpg);
+        background-image: url(../../src/img/banners/mobile/sixbeer.jpg);
     }
     #lager {
-        background-image: url(../imgs/banners/mobile/lager.jpg);
+        background-image: url(../../src/img/banners/mobile/lager.jpg);
     }
     #onebeer,
     #twobeer,
@@ -216,30 +216,30 @@ a {
         }
         .card-parks {
             .floripa {
-                background: url(../imgs/cards/florianopolis.png);
+                background: url(../../src/img/cards/florianopolis.png);
             }
             .floripa_dipraia {
-                background: url(../imgs/cards/floripa_dipraia.png);
+                background: url(../../src/img/cards/floripa_dipraia.png);
             }
             .brasilia {
-                background: url(../imgs/cards/brasilia.png);
+                background: url(../../src/img/cards/brasilia.png);
             }
             .bh {
-                background: url(../imgs/cards/bh.png);
+                background: url(../../src/img/cards/bh.png);
             }
             .sp {
-                background: url(../imgs/cards/sp.png);
+                background: url(../../src/img/cards/sp.png);
             }
             .surfhouse {
-                background: url(../imgs/cards/surfhouse.png);
+                background: url(../../src/img/cards/surfhouse.png);
             }
             .brewpub {
-                background: url(../imgs/cards/brewpub.png);
+                background: url(../../src/img/cards/brewpub.png);
             }
             .breve {
-                background: url(../imgs/cards/breve.png);
+                background: url(../../src/img/cards/breve.png);
             }
-            
+
             margin-top: 24px;
             .img-card {
                 background-position: center;
@@ -296,7 +296,7 @@ a {
     }
     #nine {
         background-repeat: no-repeat;
-        background-image: url(../imgs/banners/lg/bg-associados.jpg);
+        background-image: url(../../src/img/banners/lg/bg-associados.jpg);
         background-size: cover;
         img {
             box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);
@@ -323,7 +323,7 @@ a {
             margin: 0 -15px;
             margin-top: 24px;
             .img-card {
-                background-image: url(../imgs/cards/noticias.png);
+                background-image: url(../../src/img/cards/noticias.png);
                 background-size: cover;
                 height: 247px;
             }
@@ -333,13 +333,13 @@ a {
                 background-repeat: no-repeat;
             }
             .blog-1 {
-                background-image: url(../imgs/blog/blog-1.png);
+                background-image: url(../../src/img/blog/blog-1.png);
             }
             .blog-2 {
-                background-image: url(../imgs/blog/blog-2.png);
+                background-image: url(../../src/img/blog/blog-2.png);
             }
             .blog-3 {
-                background-image: url(../imgs/blog/blog-3.png);
+                background-image: url(../../src/img/blog/blog-3.png);
             }
             .box-card {
                 padding: 24px 0;
@@ -379,7 +379,7 @@ a {
             min-height: 324px !important;
         }
         .bg-insta {
-            background: url(../imgs/banners/mobile/insta.jpg);
+            background: url(../../src/img/banners/mobile/insta.jpg);
             background-size: cover;
             background-position: center;
             a {
@@ -439,7 +439,7 @@ a {
             line-height: 28px;
         }
         .post-image {
-            background: url(../imgs/blog/img-post.png);
+            background: url(../../src/img/blog/img-post.png);
             background-position: center;
             background-size: cover;
             height: 282px;
@@ -458,7 +458,7 @@ a {
             margin: 0 -15px;
             margin-top: 24px;
             .img-card {
-                background-image: url(../imgs/cards/noticias.png);
+                background-image: url(../../src/img/cards/noticias.png);
                 background-size: cover;
                 height: 247px;
             }
@@ -483,7 +483,7 @@ a {
         }
     }
     #error-404 {
-        background-image: url(../imgs/404/bg-404-M.svg);
+        background-image: url(../../src/img/404/bg-404-M.svg);
         background-repeat: no-repeat;
         background-position: center 80px;
         background-size: cover;
@@ -497,7 +497,7 @@ a {
     #carousel-mobile-threebeer,
     #carousel-mobile-fourbeer,
     #carousel-mobile-fivebeer,
-    #carousel-mobile-sixbeer, 
+    #carousel-mobile-sixbeer,
     #carousel-mobile-lager{
         position: relative;
         .box-carousel {
@@ -568,7 +568,7 @@ a {
         line-height: 22px;
     }
     .menor {
-        background-image: url(../imgs/maior/menor.jpg) !important;
+        background-image: url(../../src/img/maior/menor.jpg) !important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat !important;
@@ -588,16 +588,16 @@ a {
             background-size: cover;
             background-repeat: no-repeat;
             &.banner-1 {
-                background-image: url(../imgs/banners/lg/bg-1.jpg);
+                background-image: url(../../src/img/banners/lg/bg-1.jpg);
             }
             &.banner-2 {
-                background-image: url(../imgs/banners/lg/bg-2.jpg);
+                background-image: url(../../src/img/banners/lg/bg-2.jpg);
             }
             &.banner-3 {
-                background-image: url(../imgs/banners/lg/bg-3.jpg);
+                background-image: url(../../src/img/banners/lg/bg-3.jpg);
             }
             &.banner-4 {
-                background-image: url(../imgs/banners/lg/bg-4.jpg);
+                background-image: url(../../src/img/banners/lg/bg-4.jpg);
             }
         }
         .flickity-button {
@@ -610,7 +610,7 @@ a {
         }
     }
     #one {
-        background-image: url(../imgs/banners/lg/banner-one.png);
+        background-image: url(../../src/img/banners/lg/banner-one.png);
         .row {
             min-height: 950px;
         }
@@ -631,25 +631,25 @@ a {
         }
     }
     #onebeer {
-        background-image: url(../imgs/banners/lg/onebeer.jpg);
+        background-image: url(../../src/img/banners/lg/onebeer.jpg);
     }
     #twobeer {
-        background-image: url(../imgs/banners/lg/twobeer.jpg);
+        background-image: url(../../src/img/banners/lg/twobeer.jpg);
     }
     #threebeer {
-        background-image: url(../imgs/banners/lg/threebeer.jpg);
+        background-image: url(../../src/img/banners/lg/threebeer.jpg);
     }
     #fourbeer {
-        background-image: url(../imgs/banners/lg/fourbeer.jpg);
+        background-image: url(../../src/img/banners/lg/fourbeer.jpg);
     }
     #fivebeer {
-        background-image: url(../imgs/banners/lg/fivebeer.jpg);
+        background-image: url(../../src/img/banners/lg/fivebeer.jpg);
     }
     #sixbeer {
-        background-image: url(../imgs/banners/lg/sixbeer.jpg);
+        background-image: url(../../src/img/banners/lg/sixbeer.jpg);
     }
     #lager {
-        background-image: url(../imgs/banners/lg/lager.jpg);
+        background-image: url(../../src/img/banners/lg/lager.jpg);
     }
     #seven {
         padding: 0px;
@@ -685,7 +685,7 @@ a {
     }
     #eleven {
         .bg-insta {
-            background: url(../imgs/banners/lg/insta.jpg);
+            background: url(../../src/img/banners/lg/insta.jpg);
             background-size: cover;
         }
         .input-group {
@@ -704,7 +704,7 @@ a {
     }
     #blog-post {
         .post-image {
-            background: url(../imgs/blog/img-post.png);
+            background: url(../../src/img/blog/img-post.png);
             background-position: center;
             background-size: cover;
             height: 472px;
@@ -726,7 +726,7 @@ a {
         }
     }
     #curtimos {
-        background-image: url(../imgs/banners/lg/bg-estilo-layback.jpg);
+        background-image: url(../../src/img/banners/lg/bg-estilo-layback.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
