@@ -119,6 +119,10 @@ $(document).ready(function () {
 });
 "use strict";
 
+var _$$flickity;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var $ = jQuery;
 /*$(document).ready(function () {
     if (window.location.protocol != "https:") {
@@ -306,3 +310,11 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
     }
   }
 });
+$('.carousel-blog').flickity((_$$flickity = {
+  // options
+  cellAlign: 'left',
+  contain: true,
+  prevNextButtons: false,
+  pageDots: true,
+  freeScroll: true
+}, _defineProperty(_$$flickity, "contain", true), _defineProperty(_$$flickity, "groupCells", 3), _defineProperty(_$$flickity, "autoPlay", true), _defineProperty(_$$flickity, "cellAlign", 'left'), _$$flickity));

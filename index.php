@@ -10,14 +10,23 @@
 get_header();
 include get_template_directory() . ('/templates/nav-blog.php');
 
+
 ?>
+
+
+
 
 <div id="fullpageblog">
 	
 	<!-- Start the Loop. -->
 <?php
+
+$maxpost = new WP_Query( array( 'posts_per_page' => 3 ) ); 
 $i = 0;
-if ( have_posts() ) : while ( have_posts() ) : the_post()?>
+if ( $maxpost-> have_posts() ) : while ( $maxpost-> have_posts() ) : $maxpost-> the_post();
+$do_not_duplicate[] = $post->ID;
+
+?>
 
 <?php if ($i == 1) :  ?>
 	<section class="section two my-5 my-lg-0">
@@ -59,6 +68,32 @@ endwhile; else : ?>
 
 <!-- REALLY stop The Loop. -->
 <?php endif; ?>
+
+	<section class="mt-5 mt-lg-0 mb-5 pb-5" id="carouselblog">
+		<div class="container">
+			<div class="row pt-lg-0">
+			<div class="carousel-blog px-0 col-12">
+
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+					if ( in_array( $post->ID, $do_not_duplicate ) ) continue; ?>
+
+				<div class="carousel-cell col-12 col-lg-4 mx-3 mx-lg-0">
+					<?php the_post_thumbnail();?>
+					<h2 class="octin">
+						<?php the_title(); ?>
+					</h2>
+					<small>
+						<?php the_time('F jS, Y'); ?>
+					</small>
+				</div>
+
+			<?php endwhile; endif; ?>
+
+  			</div>
+			  </div>
+		</div>
+
+	</section>
 </div>
 
 

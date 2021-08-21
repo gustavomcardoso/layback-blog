@@ -1650,6 +1650,7 @@ section .row{padding:100px 0}
 .postthumb{height:500px;margin-bottom:0}
 .section.one:nth-child(1){background-image:url(../../src/img/patterns/listra-horizonte.svg);background-repeat:no-repeat;background-position-x:right;background-position-y:center}
 .section.one:nth-child(3){background-image:url(../../src/img/patterns/listra-vertical.svg);background-repeat:no-repeat}
+#carouselblog .carousel-blog .carousel-cell img{height:auto;width:100%}
 }@media(min-width:1200px){.container{max-width:1140px}
 .col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}

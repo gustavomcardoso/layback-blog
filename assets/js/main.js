@@ -224,3 +224,15 @@ $('a[href*="#"]')
         }
     });
 
+    $('.carousel-blog').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        prevNextButtons: false,
+        pageDots: true,
+        freeScroll: true,
+        contain: true,
+        groupCells: 3,
+        autoPlay: true,
+        cellAlign: 'left',
+      });
