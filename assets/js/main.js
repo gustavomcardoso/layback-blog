@@ -235,4 +235,8 @@ $('a[href*="#"]')
         groupCells: 3,
         autoPlay: true,
         cellAlign: 'left',
+        wrapAround: true,
       });
+
+
+

@@ -545,6 +545,41 @@ a {
             transform: translate(-50%, -50%);
         }
     }
+    #navblog{
+        background: white !important;
+    }
+
+    .card-image{
+        position: relative;
+        width: 100%;
+        height: 236px;
+        overflow: hidden;
+        img{    
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .card-text{
+        position: relative;
+    }
+     .carousel-cell{
+         width: 100%;
+         height: 392px;
+     }
+
+     #fullpageblog{
+        position: relative;
+        top: 90px;
+     }
+     #searchpageblog{
+        position: relative;
+        top: 90px;
+     }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -756,6 +791,7 @@ a {
     }
 
     #fullpageblog{
+        top: 0px;
         .section{
             &.two {
                 .row{
@@ -790,16 +826,10 @@ a {
             
     }
 
-    #carouselblog{
-        .carousel-blog{
-            .carousel-cell{
-                img{
-                    height: auto;
-                    width: 100%;
-                }
-            }
-        }
-    }
+    #searchpageblog{
+        position: relative;
+        top: 90px;
+     }
 
 }
 
@@ -816,4 +846,22 @@ a {
     #curtimos {
         background-position: center right;
     }
+}
+
+
+#search-form{
+    position: relative;
+}
+
+#searchsubmit{
+    border: 0px;
+    background: white;
+    background-image: url(../../src/img/icons/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
 }

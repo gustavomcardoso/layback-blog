@@ -880,6 +880,8 @@ a:hover{text-decoration:none}
 #parkbeer .box-parkbeer{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);max-width:380px}
 .box-header{bottom:-55px}
 .box-header img{max-width:55px;display:block;margin:0 auto}
+#search-form{position:relative}
+#searchsubmit{border:0;background:white;background-image:url(../../src/img/icons/lupa.svg);background-repeat:no-repeat;background-position:center;background-size:contain;width:25px;height:25px;position:relative;top:5px}
 @media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .btn{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}
@@ -1001,6 +1003,13 @@ p{font-family:"Exo 2",sans-serif;font-size:16px;line-height:19px}
 #carousel-mobile-onebeer .box-gradient:after,#carousel-mobile-twobeer .box-gradient:after,#carousel-mobile-threebeer .box-gradient:after,#carousel-mobile-fourbeer .box-gradient:after,#carousel-mobile-fivebeer .box-gradient:after,#carousel-mobile-sixbeer .box-gradient:after,#carousel-mobile-lager .box-gradient:after{content:'';top:0;left:0;display:block;width:100%;height:100%;position:absolute;z-index:-1}
 .postthumb{position:relative;overflow:hidden;width:100%;height:250px;margin-bottom:20px}
 .postthumb img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+#navblog{background:white !important}
+.card-image{position:relative;width:100%;height:236px;overflow:hidden}
+.card-image img{position:absolute;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);top:50%;left:50%;width:100%;height:auto}
+.card-text{position:relative}
+.carousel-cell{width:100%;height:392px}
+#fullpageblog{position:relative;top:90px}
+#searchpageblog{position:relative;top:90px}
 }@media screen and (min-width:391px){#header .banner-2 .br-none{display:none}
 }@media(min-width:576px){.container{max-width:540px}
 .col-sm{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
@@ -1645,12 +1654,13 @@ section .row{padding:100px 0}
 #error-404 .col-lg-8 img{width:50%}
 #curtimos{background-image:url(../../src/img/banners/lg/bg-estilo-layback.jpg);background-repeat:no-repeat;background-position:center;background-size:contain;padding:80px 0}
 #curtimos .row{min-height:620px}
+#fullpageblog{top:0}
 #fullpageblog .section.two .row{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 #collapseblog ul li{margin:0 16px}
 .postthumb{height:500px;margin-bottom:0}
 .section.one:nth-child(1){background-image:url(../../src/img/patterns/listra-horizonte.svg);background-repeat:no-repeat;background-position-x:right;background-position-y:center}
 .section.one:nth-child(3){background-image:url(../../src/img/patterns/listra-vertical.svg);background-repeat:no-repeat}
-#carouselblog .carousel-blog .carousel-cell img{height:auto;width:100%}
+#searchpageblog{position:relative;top:90px}
 }@media(min-width:1200px){.container{max-width:1140px}
 .col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}

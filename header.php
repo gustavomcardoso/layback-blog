@@ -9,7 +9,6 @@
 $directory =  get_template_directory_uri();
 ?>
 
-<!doctype html>
 <html <?php language_attributes(); ?>>
 <!doctype html>
 <html lang="en">

@@ -317,4 +317,4 @@ $('.carousel-blog').flickity((_$$flickity = {
   prevNextButtons: false,
   pageDots: true,
   freeScroll: true
-}, _defineProperty(_$$flickity, "contain", true), _defineProperty(_$$flickity, "groupCells", 3), _defineProperty(_$$flickity, "autoPlay", true), _defineProperty(_$$flickity, "cellAlign", 'left'), _$$flickity));
+}, _defineProperty(_$$flickity, "contain", true), _defineProperty(_$$flickity, "groupCells", 3), _defineProperty(_$$flickity, "autoPlay", true), _defineProperty(_$$flickity, "cellAlign", 'left'), _defineProperty(_$$flickity, "wrapAround", true), _$$flickity));
