@@ -36,7 +36,7 @@ $do_not_duplicate[] = $post->ID;
 <?php endif; ?>
 
 			<div class="container">
-				<div class="row align-items-center">
+				<div class="row pb-lg-0 align-items-center">
 					<div class="col-lg-8 col-12">
 						<div class="postthumb">
 							<?php the_post_thumbnail();?>

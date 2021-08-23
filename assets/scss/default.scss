@@ -566,10 +566,6 @@ a {
     .card-text{
         position: relative;
     }
-     .carousel-cell{
-         width: 100%;
-         height: 392px;
-     }
 
      #fullpageblog{
         position: relative;
@@ -578,6 +574,13 @@ a {
      #searchpageblog{
         position: relative;
         top: 90px;
+     }
+     #carouselblog{
+        .carousel-cell{
+            width: 100%;
+            height: 392px;
+            color: $preto;
+        }
      }
 
 }
@@ -813,16 +816,28 @@ a {
         margin-bottom: 0px;
     }
 
-    .section.one:nth-child(1){
+    .section.one:nth-child(1)::after{
+        content: '';
             background-image: url(../../src/img/patterns/listra-horizonte.svg);
             background-repeat: no-repeat;
             background-position-x: right;
-            background-position-y: center;
-            
+            background-position-y: top;
+            position: absolute;
+            top: 100px;
+            z-index: -1;
+            width: 100%;
+            height: 20%;
     }
-    .section.one:nth-child(3){
+    .section.one:nth-child(3)::before{
+            content: '';
             background-image: url(../../src/img/patterns/listra-vertical.svg);
             background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: bottom;
+            position: absolute;
+            bottom: 970px;
+            width: 100%;
+            height: 30%;
             
     }
 
