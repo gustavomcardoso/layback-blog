@@ -19,15 +19,19 @@
             </button>
             <div class="collapse navbar-collapse" id="collapseblog">
                 <ul class="navbar-nav mt-3 mt-lg-0 ml-auto align-items-center">
-                    <li class="nav-item mb-3 mb-lg-0">
-                        <a class="nav-link c-preto" href="#fullpage">categoria1</a>
-                    </li>
-                    <li class="nav-item mb-3 mb-lg-0">
-                        <a class="nav-link c-preto" href="#one">categoria2</a>
-                    </li>
-                    <li class="nav-item mb-3 mb-lg-0">
-                        <a class="nav-link c-preto" href="#fourbeer">categoria3</a>
-                    </li>
+                    
+                        <?php
+                        $args = array(
+                        'orderby' => 'slug',
+                        'parent' => 0
+                        );
+
+                        $categories = get_categories( $args ); 
+                        foreach ( $categories as $category ) {
+                        echo '<li class="nav-item mb-3 mb-lg-0"><a class="nav-link c-preto" href="' . get_category_link( $category->term_id ) . '" rel="bookmark">' . $category->name . '</a></li>';
+                        }
+
+                        ?>
 
                     <li class="nav-item pt-2 pt-lg-0" id="search-form">
                         <?php get_search_form(); ?>

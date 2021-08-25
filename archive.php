@@ -1,6 +1,6 @@
 <?php
 /**
- * Search Page template
+ * Archive Page template
  *
  * @author   Gustavo
  * @version  1.0.0
@@ -19,7 +19,7 @@ include get_template_directory() . ('/templates/nav-blog.php');
         <div class="row pb-0">
             <div class="col-12">
                 <h2 class="page-title">
-                    <?php printf( __( 'Buscando por: %s', 'mb' ), '<span>' . get_search_query() . '</span>' ); ?>
+                    <?= the_archive_title(); ?>
                 </h2>
             </div>
         </div>

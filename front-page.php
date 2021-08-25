@@ -642,54 +642,36 @@ Temperatura de serviço: 4 a 7ºC
                     notícias
                 </h2>
                 <div id="carousel-noticias" class="d-lg-flex">
-                    <div class="col-12 pr-5 pl-lg-0 pr-lg-0 col-lg-4">
+
+                <?php
+                $maxpost = new WP_Query( array( 'posts_per_page' => 3 ) );
+                if ( $maxpost-> have_posts() ) : while ( $maxpost-> have_posts() ) : $maxpost-> the_post();
+                ?>
+                    <div class="col-12 mr-auto col-lg-4">
                         <div class="card-noticias">
-                            <div class="img-card blog-1"></div>
+                            <div class="card-image">
+                                <?php the_post_thumbnail();?>
+                            </div>
                             <div class="box-card">
                                 <span class="c-preto">
-                                    Tri olímpico, Shaun White quer vaga em Tóquio...
+                                    <?php the_title(); ?>
                                 </span>
                                 <br>
-                                <small class="c-preto">13 de setembro de 2019</small>
-                                <p class="c-preto"> Lenda do snowboard com três ouros olímpicos em Jogos de inverno, americano faz transição para o skate Park com foco na Olimpíada de 2020 e quer estar na final do Mundial em São Paulo
+                                <small class="c-preto">
+                                    <?php the_time('F jS, Y'); ?>
+                                </small>
+                                <p class="c-preto"> 
+                                    <?php the_excerpt() ?>
                                 </p>
-                                <a href="https://globoesporte.globo.com/skate/noticia/tri-olimpico-shaun-white-quer-vaga-em-toquio-e-convida-pedro-barros-vamos-surfar-no-havai.ghtml">Leia
-                                    mais <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt=""></a>
+                                <a href="<?php the_permalink(); ?>">
+                                    Leia mais 
+                                    <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 pr-5 pr-lg-0 col-lg-4">
-                        <div class="card-noticias">
-                            <div class="img-card blog-2"></div>
-                            <div class="box-card">
-                                <span class="c-preto">
-                                    Fã de Senna e astro de Mundial, Pedro Barros acumula títulos...
-                                </span>
-                                <br>
-                                <small class="c-preto">13 de setembro de 2019</small>
-                                <p class="c-preto">Catarinense de 24 anos disputa torneio internacional em São Paulo e fala ao GloboEsporte.com sobre precocidade, devoção ao esporte, doping e maconha
-                                </p>
-                                <a href="https://globoesporte.globo.com/skate/noticia/fa-de-senna-e-astro-de-mundial-pedro-barros-acumula-titulos-e-tatuagens-e-vira-esperanca-olimpica-sou-skate-100percent.ghtml">Leia
-                                    mais <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 pr-5 pr-lg-0 col-lg-4">
-                        <div class="card-noticias">
-                            <div class="img-card blog-3"></div>
-                            <div class="box-card">
-                                <span class="c-preto">
-                                    Skate é algo de que brasileiros podem se orgulhar...
-                                </span>
-                                <br>
-                                <small class="c-preto">12 de setembro de 2019</small>
-                                <p class="c-preto"> Mundial de park realizado em São Paulo tem o catarinense como grande destaque
-                                </p>
-                                <a href="https://www1.folha.uol.com.br/esporte/2019/09/skate-e-algo-de-que-brasileiros-podem-se-orgulhar-diz-pedro-barros.shtml">Leia
-                                    mais <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
+
+                <?php endwhile; endif; ?>
 
                 </div>
 
@@ -697,6 +679,7 @@ Temperatura de serviço: 4 a 7ºC
         </div>
     </div>
 </section>
+
 <section id="eleven" class="bgc-preto section p-0 fp-auto-height">
     <div class="bg-insta">
         <div class="container">

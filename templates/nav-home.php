@@ -39,6 +39,9 @@
                     <li class="nav-item mb-3 mb-lg-0">
                         <a class="nav-link" href="#ten">notícias</a>
                     </li>
+                    <li class="nav-item mb-3 mb-lg-0">
+                        <a class="nav-link" href="<?= home_url('/blog'); ?>">blog</a>
+                    </li>
 
                     <li class="nav-item mb-3 mb-lg-0">
                         <a class="nav-link" href="#footer">contato</a>

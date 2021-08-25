@@ -99,7 +99,10 @@ endwhile; else : ?>
 		</div>
 
 	</section>
-	<?php get_footer(); ?>
+	<?php 
+
+	include get_template_directory() . ('/templates/footer-blog.php');
+	?>
 </div>
 
 

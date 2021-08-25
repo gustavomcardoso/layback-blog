@@ -28,3 +28,13 @@ function gulp_wp_theme_styles() {
     wp_enqueue_style('css');
 }
 add_action( 'wp_enqueue_scripts', 'gulp_wp_theme_styles' );
+
+function wpdocs_excerpt_more( $more ) {
+    return '';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 19;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

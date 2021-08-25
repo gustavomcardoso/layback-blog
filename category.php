@@ -1,6 +1,6 @@
 <?php
 /**
- * Search Page template
+ * Category Page template
  *
  * @author   Gustavo
  * @version  1.0.0
@@ -13,13 +13,13 @@ include get_template_directory() . ('/templates/nav-blog.php');
 
 <div id="searchpageblog">
 
-<section>
+<section class="pb-5">
     <div class="container">
 
         <div class="row pb-0">
             <div class="col-12">
                 <h2 class="page-title">
-                    <?php printf( __( 'Buscando por: %s', 'mb' ), '<span>' . get_search_query() . '</span>' ); ?>
+                    <?php single_cat_title(); ?>
                 </h2>
             </div>
         </div>
@@ -28,7 +28,7 @@ include get_template_directory() . ('/templates/nav-blog.php');
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <a href="<?php the_permalink(); ?>" class="col-12 col-lg-4 pb-4">
+            <a href="<?php the_permalink(); ?>" class="col-12 col-lg-4">
 		        <div class="card-image">
 			        <?php the_post_thumbnail();?>
 		        </div>
