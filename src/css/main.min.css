@@ -859,8 +859,8 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .btn-primary.bgc-amarelo:hover{background:#fff !important;color:#404041}
 .btn-primary.bgc-gold{-webkit-transition:.5s;transition:.5s}
 .btn-primary.bgc-gold:hover{background:#404041 !important;color:#fff}
-.btn-primary.bgc-amarelo-blog{-webkit-transition:.5s;transition:.5s}
-.btn-primary.bgc-amarelo-blog:hover{background:#121212 !important;color:#f6d351 !important}
+.bgc-amarelo-blog{-webkit-transition:.5s;transition:.5s}
+.bgc-amarelo-blog:hover{background:#121212 !important;color:#f6d351 !important}
 .bgc-amarelo-blog{padding:8px 20px;font-size:.75rem;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
 .sucesso-modal{display:none}
 input.error,select.error,textarea.error{border:2px solid #ff3737}
@@ -880,8 +880,10 @@ a:hover{text-decoration:none}
 #parkbeer .box-parkbeer{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);max-width:380px}
 .box-header{bottom:-55px}
 .box-header img{max-width:55px;display:block;margin:0 auto}
-#search-form{position:relative}
-#searchsubmit{border:0;background:white;background-image:url(../../src/img/icons/lupa.svg);background-repeat:no-repeat;background-position:center;background-size:contain;width:25px;height:25px;position:relative;top:5px}
+#open{border:0;background:white;background-image:url(../../src/img/icons/lupa.svg);background-repeat:no-repeat;background-position:center;background-size:contain;width:25px;height:25px;position:relative;top:5px;-webkit-transition:.5s;transition:.5s}
+#searchsubmit{display:none;border:0;background:white;background-image:url(../../src/img/icons/lupa.svg);background-repeat:no-repeat;background-position:center;background-size:contain;width:25px;height:25px;position:relative;top:10px;right:200px;z-index:1;-webkit-transition:1s;transition:1s}
+#close{position:relative;top:10px;right:5px;-webkit-transition:.5s;transition:.5s;z-index:5;background-image:url(../../src/img/icons/icon_close.svg);background-repeat:no-repeat;background-position:center;background-size:contain;background-color:transparent;-webkit-box-shadow:none;box-shadow:none;border:0}
+#s{display:none;position:absolute;right:10px;top:8px}
 @media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .btn{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}
@@ -1657,6 +1659,7 @@ section .row{padding:100px 0}
 #curtimos .row{min-height:620px}
 #fullpageblog{top:0}
 #fullpageblog .section.two .row{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+#collapseblog ul{position:relative}
 #collapseblog ul li{margin:0 16px}
 .postthumb{height:500px;margin-bottom:0}
 .section.one:nth-child(1)::after{content:'';background-image:url(../../src/img/patterns/listra-horizonte.svg);background-repeat:no-repeat;background-position-x:right;background-position-y:top;position:absolute;top:100px;z-index:-1;width:100%;height:20%}

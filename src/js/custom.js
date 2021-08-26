@@ -120,6 +120,30 @@ $(document).ready(function () {
 "use strict";
 
 var $ = jQuery;
+$(document).on('click', '#open', function (e) {
+  e.preventDefault();
+  $('#s').show().animate({
+    width: "45%",
+    height: "99%",
+    opacity: 1
+  }, 400);
+  $('#searchsubmit').show().animate({
+    opacity: 1
+  }, 600);
+  $('#open').prop('id', 'close');
+});
+$(document).on('click', '#close', function (e) {
+  e.preventDefault();
+  $('#s').hide().animate({
+    width: "0%",
+    height: "0%",
+    opacity: 0
+  }, 400);
+  $('#searchsubmit').hide().animate({
+    opacity: 0
+  }, 400);
+  $('#close').prop('id', 'open');
+});
 $('.carousel-header').flickity({
   cellAlign: 'left',
   contain: true,
@@ -325,7 +349,11 @@ function modifyToFull() {
   footer.style.display = 'block';
 }
 
+;
+
 function modifyToSmart() {
   maiormenor.classList.add('menor');
   maiormenorContent.innerHTML = '<h1 class="c-amarelo mb-3 upper text-center"> valeu pela sinceridade </h1> <p class="c-amarelo text-center"> Infelizmente voce ainda não pode acessar nosso site.</p>';
 }
+
+;

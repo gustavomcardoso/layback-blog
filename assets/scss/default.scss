@@ -811,6 +811,7 @@ a {
 
     #collapseblog{
                 ul{
+                    position: relative;
                     li{
                         margin: 0px 16px;
                     }
@@ -883,11 +884,7 @@ a {
 }
 
 
-#search-form{
-    position: relative;
-}
-
-#searchsubmit{
+#open{
     border: 0px;
     background: white;
     background-image: url(../../src/img/icons/lupa.svg);
@@ -898,4 +895,43 @@ a {
     height: 25px;
     position: relative;
     top: 5px;
+    transition: .5s;
+}
+#searchsubmit{
+    display: none;
+    border: 0px;
+    background: white;
+    background-image: url(../../src/img/icons/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 10px;
+    right: 200px;
+    z-index: 1;
+    transition: 1s;
+}
+
+#close {
+    position: relative;
+	top: 10px;
+    right: 5px;
+	transition: .5s;
+    z-index: 5;
+    background-image: url(../../src/img/icons/icon_close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0px;
+}
+
+#s{
+	display: none;
+	position: absolute;
+    right: 10px;
+    top: 8px;
 }
