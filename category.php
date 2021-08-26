@@ -34,6 +34,13 @@ include get_template_directory() . ('/templates/nav-blog.php');
 		        </div>
 
 		        <div class="card-text">
+                    <small class="c-amarelo">
+                        <?php
+                            $categories = get_the_category(); 
+                            $category_list = join( ', ', wp_list_pluck( $categories, 'name' ) );
+                            echo wp_kses_post( $category_list );
+                        ?>
+                    </small>
 			        <h2 class="octin c-preto">
 				        <?php the_title(); ?>
 			        </h2>

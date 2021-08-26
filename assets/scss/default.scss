@@ -851,6 +851,20 @@ a {
         top: 90px;
      }
 
+
+    .card-text{
+        margin-top: 0.5rem;
+        h2{
+            font-size: 28px;
+            line-height: 29px;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        small{
+            font-weight: bold;
+        }
+    }
+
 }
 
 @media screen and (min-width: $xl) {
