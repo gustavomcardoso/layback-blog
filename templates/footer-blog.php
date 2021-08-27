@@ -18,10 +18,11 @@
 </section>
 <section id="footer" class="section">
 
-        <div class="container-fluid bgc-amarelo">
+        <div class="container-fluid bgc-amarelo py-5 py-lg-0">
             <div class="container">
-                <div class="row ">
-                    <div class="col-12 col-lg-6 offset-lg-3 d-flex">
+
+                <div class="row pb-0">
+                    <div class="col-sm-8 offset-sm-3 col-lg-7 offset-lg-3 col-xl-6 offset-xl-3 d-flex">
                         <h2 class="mr-auto c-preto">
                         RIDE WITH US
                         </h2>
@@ -30,6 +31,21 @@
                         </h2>
                     </div>
                 </div>
+
+                <div class="row pt-0 justify-content-center align-content-center">
+                    <div class="tnp tnp-subscription col-sm-7 offset-sm-1 col-lg-6 offset-lg-0 bgc-amarelo" id="newsletter">
+                        <form method="post" action="http://localhost/2021/?na=s">
+                            <input type="hidden" name="nlang" value="">
+                            <div class="tnp-field tnp-field-email">
+                                <input class="tnp-email" type="email" name="ne" value="" required>
+                            </div>
+                            <div class="tnp-field tnp-field-button">
+                                <input class="tnp-submit" type="submit" value="Qual é o seu email?" >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="container-fluid bgc-preto">
@@ -50,11 +66,11 @@
                         </h2>
                         <p class="c-amarelo mt-3">
                             <a href="https://www.instagram.com/laybackpark/" target="_blank">
-                                <img src="<?php bloginfo('template_directory') ?>/assets/imgs/icons/icon_instagram2.svg" alt="">
+                                <img src="<?php bloginfo('template_directory') ?>/src/img/icons/icon_instagram2.svg" alt="">
                             </a>
 
                             <a href="https://www.facebook.com/laybackbeer" target="_blank">
-                                <img src="<?php bloginfo('template_directory') ?>/assets/imgs/icons/icon_facebook.svg" alt="">
+                                <img src="<?php bloginfo('template_directory') ?>/src/img/icons/icon_facebook.svg" alt="">
                             </a>
                         </p>
                     </div>

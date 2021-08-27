@@ -1668,6 +1668,12 @@ section .row{padding:100px 0}
 .card-text{margin-top:.5rem}
 .card-text h2{font-size:28px;line-height:29px;font-weight:bold;margin-top:.5rem}
 .card-text small{font-weight:bold}
+#singlepage::after{content:'';background-image:url(../../src/img/patterns/listrasingle.svg);background-repeat:no-repeat;width:11%;height:16%;top:134px;right:0;position:absolute;z-index:-1}
+#singlepage::before{content:'';background-image:url(../../src/img/patterns/listrasingle.svg);background-repeat:no-repeat;width:11%;height:16%;top:134px;position:absolute;z-index:-1}
+#footer .container-fluid:nth-child(1) .container{position:relative}
+#footer .container-fluid:nth-child(1) .container::before{content:'';background-image:url(../../src/img/patterns/listradireitanews.svg);background-repeat:no-repeat;width:29%;height:45%;position:absolute;bottom:0;left:-1%}
+#footer .container-fluid:nth-child(1) .container::after{content:'';background-image:url(../../src/img/patterns/listraesquerdanews.svg);background-repeat:no-repeat;width:26%;height:45%;position:absolute;bottom:0;right:-1%;z-index:0}
+#footer .container-fluid:nth-child(1) .container .col-sm-7{z-index:1}
 }@media(min-width:1200px){.container{max-width:1140px}
 .col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}

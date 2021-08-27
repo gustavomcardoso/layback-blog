@@ -866,6 +866,59 @@ a {
         }
     }
 
+    #singlepage{
+            &::after{
+            content: '';
+            background-image: url(../../src/img/patterns/listrasingle.svg);
+            background-repeat: no-repeat;
+            width: 11%;
+            height: 16%;
+            top: 134px;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        &::before{
+            content: '';
+            background-image: url(../../src/img/patterns/listrasingle.svg);
+            background-repeat: no-repeat;
+            width: 11%;
+            height: 16%;
+            top: 134px;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    #footer .container-fluid:nth-child(1){
+            .container{
+                position: relative;
+                &::before{
+                    content: '';
+                    background-image: url(../../src/img/patterns/listradireitanews.svg);
+                    background-repeat: no-repeat;
+                    width: 29%;
+                    height: 45%;
+                    position: absolute;
+                    bottom: 0%;
+                    left: -1%;
+                }
+                &::after{
+                    content: '';
+                    background-image: url(../../src/img/patterns/listraesquerdanews.svg);
+                    background-repeat: no-repeat;
+                    width: 26%;
+                    height: 45%;
+                    position: absolute;
+                    bottom: 0%;
+                    right: -1%;
+                    z-index: 0;
+                }
+                .col-sm-7{
+                    z-index: 1;
+                }
+            }   
+    }
+        
 }
 
 @media screen and (min-width: $xl) {

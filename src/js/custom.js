@@ -126,7 +126,7 @@ $(document).on('click', '#open', function (e) {
     width: "45%",
     height: "99%",
     opacity: 1
-  }, 400);
+  }, 500);
   $('#searchsubmit').show().animate({
     opacity: 1
   }, 600);
@@ -138,10 +138,10 @@ $(document).on('click', '#close', function (e) {
     width: "0%",
     height: "0%",
     opacity: 0
-  }, 400);
+  }, 500);
   $('#searchsubmit').hide().animate({
     opacity: 0
-  }, 400);
+  }, 500);
   $('#close').prop('id', 'open');
 });
 $('.carousel-header').flickity({

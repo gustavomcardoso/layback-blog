@@ -60,14 +60,8 @@ $do_not_duplicate[] = $post->ID;
 <?php
 $i++;
 endwhile; else : ?>
-
-
-<!-- The very first "if" tested to see if there were any Posts to -->
-<!-- display.  This "else" part tells what do if there weren't any. -->
 <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
-
-<!-- REALLY stop The Loop. -->
 <?php endif; ?>
 
 	<section class="mt-5 mt-lg-0 mb-5 pb-5" id="carouselblog">
