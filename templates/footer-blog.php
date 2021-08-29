@@ -18,30 +18,26 @@
 </section>
 <section id="footer" class="section">
 
-        <div class="container-fluid bgc-amarelo py-5 py-lg-0">
-            <div class="container">
+        <div class="container-fluid bgc-amarelo">
+            <div class="container pt-5">
 
-                <div class="row pb-0">
-                    <div class="col-sm-8 offset-sm-3 col-lg-7 offset-lg-3 col-xl-6 offset-xl-3 d-flex">
-                        <h2 class="mr-auto c-preto">
+                <div class="row pb-0 pt-4 pt-lg-0">
+                    <div class="col-sm-8 offset-sm-2 col-lg-7 offset-lg-3 col-xl-6 offset-xl-3 offset-md-2 d-flex justify-content-center justify-content-lg-start">
+                        <h2 class="mx-auto c-preto d-none d-lg-inline mb-lg-0 octin">
                         RIDE WITH US
                         </h2>
-                        <h2 class="ml-auto c-preto">
+                        <h2 class="mx-auto c-preto mb-lg-0 octin">
                         LIVE WITH US
                         </h2>
                     </div>
                 </div>
 
-                <div class="row pt-0 justify-content-center align-content-center">
-                    <div class="tnp tnp-subscription col-sm-7 offset-sm-1 col-lg-6 offset-lg-0 bgc-amarelo" id="newsletter">
-                        <form method="post" action="http://localhost/2021/?na=s">
+                <div class="row pt-0 pt-lg-0 justify-content-center align-content-center">
+                    <div class="col-8 col-lg-6 offset-lg-0 pr-lg-0" id="newsletter">
+                        <form method="post" action="http://localhost/2021/?na=s" class="">
                             <input type="hidden" name="nlang" value="">
-                            <div class="tnp-field tnp-field-email">
-                                <input class="tnp-email" type="email" name="ne" value="" required>
-                            </div>
-                            <div class="tnp-field tnp-field-button">
-                                <input class="tnp-submit" type="submit" value="Qual é o seu email?" >
-                            </div>
+                            <input class="tnp-email octin" type="email" name="ne" value="" required placeholder="Qual é o seu Email?">
+                            <input class="tnp-submit" type="submit" value="INSCREVA-SE" >
                         </form>
                     </div>
                 </div>
@@ -51,7 +47,7 @@
         <div class="container-fluid bgc-preto">
             <div class="container">
                 <div class="row align-items-center bgc-preto">
-                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 d-flex justify-content-center pt-lg-0 pt-5">
                         <img class="img-fluid" src="<?= $directory ?>/src/img/icons/logofooter.svg" alt="Layback Logo">
                     </div>
                     <div class="col-12 col-lg-3 offset-lg-1 mb-5 mb-lg-0 d-flex flex-column align-items-center">

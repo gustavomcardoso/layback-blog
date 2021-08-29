@@ -581,12 +581,58 @@ a {
         top: 90px;
      }
      #carouselblog{
+         background-color: white;
         .carousel-cell{
             width: 100%;
             height: 392px;
             color: $preto;
         }
      }
+
+     #footer .container-fluid:nth-child(1){
+        .container{
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url(../../src/img/patterns/listranewsmobile.svg);
+                background-repeat: no-repeat;
+                width: 93%;
+                height: 88%;
+                position: absolute;
+                bottom: 0%;
+                left: 3%;
+            }
+            .col-sm-8{
+                h2{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            .col-8{
+                .tnp-email{
+                    width: 97%;
+                    height: 31.72px;
+                    border-radius: 5px;
+                    padding: 7px;
+                }
+                .tnp-submit{
+                    width: 64%;
+                    height: 35px;
+                    background: #121212;
+                    border-radius: 5px;
+                    color: $amarelo;
+                    position: relative;
+                    top: 10px;
+                    font-size: 18px;
+                    left: 17%;
+                    margin-top: 20px;
+                }
+            }
+            .row.pt-0{
+                padding-bottom: 58px;
+            }
+        }   
+}
 
 }
 
@@ -913,8 +959,38 @@ a {
                     right: -1%;
                     z-index: 0;
                 }
-                .col-sm-7{
+                .col-sm-8{
+                    h2{
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+                }
+                .col-8{
                     z-index: 1;
+                    .tnp-email{
+                        width: 69%;
+                        height: 46px;
+                    }
+                    .tnp-submit{
+                        width: 29%;
+                        height: 46px;
+                        background: #121212;
+                        border-radius: 5px;
+                        color: $amarelo;
+                        position: relative;
+                        top: -0.5px;
+                        transition: .5s;
+                        left: -10px;
+                        &:hover{
+                            background: white;
+                            transition: .5s;
+                            border-color: white;
+                            color: $preto;
+                        }
+                    }
+                }
+                .row.pt-0{
+                    padding-bottom: 35px;
                 }
             }   
     }
