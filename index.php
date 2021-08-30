@@ -35,7 +35,7 @@ $do_not_duplicate[] = $post->ID;
 	<section class="section one">
 <?php endif; ?>
 
-			<div class="container">
+			<div class="container mb-5">
 				<div class="row pb-lg-0 align-items-center">
 					<div class="col-lg-8 col-12">
 						<div class="postthumb">
