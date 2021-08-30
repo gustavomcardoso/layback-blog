@@ -866,6 +866,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 input.error,select.error,textarea.error{border:2px solid #ff3737}
 input.valid,select.valid,textarea.valid{border:2px solid #20a200}
 label.error{font-size:16px;line-height:19px;color:#ff3737}
+.tahoma{font-family:Tahoma}
 .octin{font-family:"Octin College",cursive !important}
 .octin-bold{font-family:"Octin Bold",cursive !important}
 .graduate{font-family:"Graduate",cursive !important}
@@ -1010,7 +1011,7 @@ p{font-family:"Exo 2",sans-serif;font-size:16px;line-height:19px}
 #fullpageblog{position:relative;top:90px}
 #searchpageblog{position:relative;top:90px}
 #carouselblog{background-color:white}
-#carouselblog .carousel-cell{width:100%;height:392px;color:#121212}
+#carouselblog .carousel-cell{width:100%;height:410px;color:#121212}
 #footer .container-fluid.bgc-amarelo{min-height:320px;position:relative;padding-top:129px;background-image:url(../../src/img/patterns/listranewsmobile.svg);background-repeat:no-repeat;background-size:auto;background-position-x:center;background-position-y:10px}
 #footer .container-fluid.bgc-amarelo .col-sm-8 h2{font-size:18px}
 #footer .container-fluid.bgc-amarelo .col-8 .tnp-email{width:182px;height:31.72px;border-radius:5px;padding:7px;position:relative}
@@ -1673,8 +1674,7 @@ section .row{padding:100px 0}
 .section.one:nth-child(3)::before{content:'';background-image:url(../../src/img/patterns/listra-vertical.svg);background-repeat:no-repeat;background-position-x:left;background-position-y:bottom;position:absolute;top:970px;width:100%;height:30%;z-index:-1}
 #searchpageblog{position:relative;top:90px}
 .card-text{margin-top:.5rem}
-.card-text h2{font-size:28px;line-height:29px;font-weight:bold;margin-top:.5rem}
-.card-text small{font-weight:bold}
+.card-text h2{font-size:28px;line-height:34px;margin-top:.5rem}
 #singlepage::after{content:'';background-image:url(../../src/img/patterns/listrasingle.svg);background-repeat:no-repeat;width:11%;height:16%;top:134px;right:0;position:absolute;z-index:-1}
 #singlepage::before{content:'';background-image:url(../../src/img/patterns/listrasingle.svg);background-repeat:no-repeat;width:11%;height:16%;top:134px;position:absolute;z-index:-1}
 #footer .container-fluid.bgc-amarelo{background-image:none;min-height:213px;padding-top:51px}

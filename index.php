@@ -43,11 +43,11 @@ $do_not_duplicate[] = $post->ID;
 						</div>
 					</div>
 					<div class="col-lg-4 col-12 align-items-center align-items-lg-start d-flex flex-column">
-						<h2 class="octin post-tittle">
+						<h2 class="octin post-tittle mb-0">
 							<?php the_title(); ?>
 						</h2>
-						<small>
-							<?php the_time('F jS, Y'); ?>
+						<small class="tahoma mb-3">
+							<?= get_the_date('d'). ' ' . 'de' . ' ' . get_the_date('F') . ' ' . 'de' . ' ' . get_the_date('Y'); ?>
 						</small>
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute();?>" class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
 							LEIA MAIS
@@ -80,8 +80,8 @@ endwhile; else : ?>
 							<h2 class="octin">
 								<?php the_title(); ?>
 							</h2>
-							<small>
-								<?php the_time('F jS, Y'); ?>
+							<small class="tahoma">
+								<?= get_the_date('d'). ' ' . 'de' . ' ' . get_the_date('F') . ' ' . 'de' . ' ' . get_the_date('Y'); ?>
 							</small>
 						</div>
 					</a>
