@@ -33,7 +33,7 @@
 
                         ?>
 
-                    <li class="nav-item pt-2 pt-lg-0" id="search-form">
+                    <li class="nav-item" id="search-form">
                         <?php get_search_form(); ?>
                     </li>
 

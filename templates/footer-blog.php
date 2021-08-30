@@ -19,10 +19,9 @@
 <section id="footer" class="section">
 
         <div class="container-fluid bgc-amarelo">
-            <div class="container pt-5">
-
-                <div class="row pb-0 pt-4 pt-lg-0">
-                    <div class="col-sm-8 offset-sm-2 col-lg-7 offset-lg-3 col-xl-6 offset-xl-3 offset-md-2 d-flex justify-content-center justify-content-lg-start">
+            <div id="listra">
+                <div class="row pt-lg-0 pb-0 justify-content-center">
+                    <div class="col-sm-8 col-lg-6 d-flex justify-content-center">
                         <h2 class="mx-auto c-preto d-none d-lg-inline mb-lg-0 octin">
                         RIDE WITH US
                         </h2>
@@ -33,16 +32,15 @@
                 </div>
 
                 <div class="row pt-0 pt-lg-0 justify-content-center align-content-center">
-                    <div class="col-8 col-lg-6 offset-lg-0 pr-lg-0" id="newsletter">
-                        <form method="post" action="http://localhost/2021/?na=s" class="">
+                    <div class="col-8 pr-lg-3 pl-lg-1" id="newsletter">
+                        <form method="post" action="http://localhost/2021/?na=s" class="pl-lg-4 d-flex flex-column flex-lg-row justify-content-lg-center">
                             <input type="hidden" name="nlang" value="">
-                            <input class="tnp-email octin" type="email" name="ne" value="" required placeholder="Qual é o seu Email?">
-                            <input class="tnp-submit" type="submit" value="INSCREVA-SE" >
+                            <input class="tnp-email octin mx-auto mx-lg-0" type="email" name="ne" value="" required placeholder="Qual é o seu Email?">
+                            <input class="tnp-submit mx-auto mx-lg-0 mt-lg-0" type="submit" value="INSCREVA-SE" >
                         </form>
                     </div>
                 </div>
-
-            </div>
+                </div>
         </div>
         <div class="container-fluid bgc-preto">
             <div class="container">

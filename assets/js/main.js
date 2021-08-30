@@ -1,28 +1,34 @@
 var $ = jQuery;
 
 
-	$(document).on('click', '#open', function(e) {
-		e.preventDefault();
+$( document ).ready( function() {
+	if ( 992 < $( window ).width() ) {
 
-		$('#s').show().animate({
-			width: "45%",
-			height: "99%",
-			opacity: 1
-		}, 500);
-		$('#searchsubmit').show().animate({opacity:1}, 600,);
-		$('#open').prop('id', 'close')
-	});
-	$(document).on('click', '#close', function(e) {
-		e.preventDefault();
+		$(document).on('click', '#open', function(e) {
+			e.preventDefault();
 
-		$('#s').hide().animate({
-			width: "0%",
-			height: "0%",
-			opacity: 0
-		}, 500);
-		$('#searchsubmit').hide().animate({opacity: 0}, 500);
-		$('#close').prop('id', 'open')
-	});
+			$('#s').show().animate({
+				width: "45%",
+				height: "99%",
+				opacity: 1
+			}, 500);
+			$('#searchsubmit').show().animate({opacity:1}, 600,);
+			$('#open').prop('id', 'close')
+		});
+		$(document).on('click', '#close', function(e) {
+			e.preventDefault();
+
+			$('#s').hide().animate({
+				width: "0%",
+				height: "0%",
+				opacity: 0
+			}, 500);
+			$('#searchsubmit').hide().animate({opacity: 0}, 500);
+			$('#close').prop('id', 'open')
+		});
+
+	}
+});
 
 $( '.carousel-header' ).flickity({
 	cellAlign: 'left',
@@ -110,6 +116,7 @@ $( document ).ready( function() {
 		$( 'nav' ).removeClass( 'navbar_expand' );
 		$( '.menu-span' ).addClass( 'd-inline-block' );
 	});
+
 });
 
 $( window ).scroll( function() {
