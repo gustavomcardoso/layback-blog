@@ -57,7 +57,7 @@
                             redes sociais
                         </h2>
                         <p class="c-amarelo mt-3">
-                            <a href="https://www.instagram.com/laybackpark/" target="_blank">
+                            <a href="https://www.instagram.com/laybackbeer/" target="_blank">
                                 <img src="<?php bloginfo('template_directory') ?>/assets/imgs/icons/icon_instagram2.svg" alt="">
                             </a>
 

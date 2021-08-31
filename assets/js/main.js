@@ -9,7 +9,6 @@ $( document ).ready( function() {
 
 			$('#s').show().animate({
 				width: "45%",
-				height: "99%",
 				opacity: 1
 			}, 500);
 			$('#searchsubmit').show().animate({opacity:1}, 600,);
@@ -20,7 +19,6 @@ $( document ).ready( function() {
 
 			$('#s').hide().animate({
 				width: "0%",
-				height: "0%",
 				opacity: 0
 			}, 500);
 			$('#searchsubmit').hide().animate({opacity: 0}, 500);

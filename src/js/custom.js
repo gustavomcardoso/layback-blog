@@ -126,7 +126,6 @@ $(document).ready(function () {
       e.preventDefault();
       $('#s').show().animate({
         width: "45%",
-        height: "99%",
         opacity: 1
       }, 500);
       $('#searchsubmit').show().animate({
@@ -138,7 +137,6 @@ $(document).ready(function () {
       e.preventDefault();
       $('#s').hide().animate({
         width: "0%",
-        height: "0%",
         opacity: 0
       }, 500);
       $('#searchsubmit').hide().animate({

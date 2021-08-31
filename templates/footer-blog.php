@@ -33,11 +33,7 @@
 
                 <div class="row pt-0 pt-lg-0 justify-content-center align-content-center">
                     <div class="col-8 pr-lg-3 pl-lg-1" id="newsletter">
-                        <form method="post" action="http://localhost/2021/?na=s" class="pl-lg-4 d-flex flex-column flex-lg-row justify-content-lg-center">
-                            <input type="hidden" name="nlang" value="">
-                            <input class="tnp-email octin mx-auto mx-lg-0" type="email" name="ne" value="" required placeholder="Qual é o seu Email?">
-                            <input class="tnp-submit mx-auto mx-lg-0 mt-lg-0" type="submit" value="INSCREVA-SE" >
-                        </form>
+                        <?php echo do_shortcode( '[newsletter_form form="1"]' ) ?>
                     </div>
                 </div>
                 </div>
@@ -59,7 +55,7 @@
                             redes sociais
                         </h2>
                         <p class="c-amarelo mt-3">
-                            <a href="https://www.instagram.com/laybackpark/" target="_blank">
+                            <a href="https://www.instagram.com/laybackbeer/" target="_blank">
                                 <img src="<?php bloginfo('template_directory') ?>/src/img/icons/icon_instagram2.svg" alt="">
                             </a>
 
@@ -129,3 +125,9 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+
+<!-- <form method="post" action="http://localhost/2021/?na=s" class="pl-lg-4 d-flex flex-column flex-lg-row justify-content-lg-center">
+    <input type="hidden" name="nlang" value="">
+    <input class="tnp-email octin mx-auto mx-lg-0" type="email" name="ne" value="" required placeholder="Qual é o seu Email?">
+    <input class="tnp-submit mx-auto mx-lg-0 mt-lg-0" type="submit" value="INSCREVA-SE" >
+</form> -->

@@ -49,7 +49,7 @@ $do_not_duplicate[] = $post->ID;
 						<small class="tahoma mb-3">
 							<?= get_the_date('d'). ' ' . 'de' . ' ' . get_the_date('F') . ' ' . 'de' . ' ' . get_the_date('Y'); ?>
 						</small>
-						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute();?>" class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
+						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Link direto para <?php the_title_attribute();?>" class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
 							LEIA MAIS
 						</a>
 					</div>
@@ -77,6 +77,13 @@ endwhile; else : ?>
 						</div>
 
 						<div class="card-text">
+							<small class="c-amarelo">
+								<?php
+									$categories = get_the_category(); 
+									$category_list = join( ', ', wp_list_pluck( $categories, 'name' ) );
+									echo wp_kses_post( $category_list );
+								?>
+                    		</small>
 							<h2 class="octin">
 								<?php the_title(); ?>
 							</h2>

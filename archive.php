@@ -28,7 +28,7 @@ include get_template_directory() . ('/templates/nav-blog.php');
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <a href="<?php the_permalink(); ?>" class="col-12 col-lg-4 pb-4">
+            <a href="<?php the_permalink(); ?>" class="col-12 col-lg-4 pb-5">
 		        <div class="card-image">
 			        <?php the_post_thumbnail();?>
 		        </div>
@@ -43,13 +43,13 @@ include get_template_directory() . ('/templates/nav-blog.php');
                         ?>
                     </small>
 
-			        <h2 class="octin c-preto">
+			        <h2 class="octin">
 				        <?php the_title(); ?>
 			        </h2>
 
-			        <small class="c-preto">
-				        <?php the_time('F jS, Y'); ?>
-			        </small>
+                    <small class="tahoma">
+						<?= get_the_date('d'). ' ' . 'de' . ' ' . get_the_date('F') . ' ' . 'de' . ' ' . get_the_date('Y'); ?>
+					</small>
 		        </div>
 	        </a>
 

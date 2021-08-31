@@ -65,11 +65,18 @@ endwhile; endif;
 						</div>
 
 						<div class="card-text">
+							<small class="c-amarelo">
+								<?php
+									$categories = get_the_category(); 
+									$category_list = join( ', ', wp_list_pluck( $categories, 'name' ) );
+									echo wp_kses_post( $category_list );
+								?>
+							</small>
 							<h2 class="octin">
 								<?php the_title(); ?>
 							</h2>
-							<small>
-								<?php the_time('F jS, Y'); ?>
+							<small class="tahoma">
+								<?= get_the_date('d'). ' ' . 'de' . ' ' . get_the_date('F') . ' ' . 'de' . ' ' . get_the_date('Y'); ?>
 							</small>
 						</div>
 					</a>
