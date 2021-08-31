@@ -243,12 +243,17 @@ const intro = document.getElementById( 'intro' );
 const maiormenor = document.getElementById( 'maiormenor' );
 const maiormenorContent = document.getElementById( 'content' );
 
-maiormenorContent.innerHTML =
-	'<h1 class="c-amarelo mb-5"> Você é maior de 18 anos? </h1> <a id="content-full"> <button type="button" class="btn btn-outline-primary bdc-amarelo c-amarelo bold upper">SIM</button> </a> <a id="content-smart"> <button type="button" class="btn btn-outline-primary bdc-amarelo c-amarelo bold upper mr-0">NÃO</button> </a>';
+const maior18 = localStorage.getItem('maior18');
 
-fullpage.style.display = 'none';
-menu.style.display = 'none';
-footer.style.display = 'none';
+if (!maior18){
+	maiormenorContent.innerHTML =
+		'<h1 class="c-amarelo mb-5"> Você é maior de 18 anos? </h1> <a id="content-full"> <button type="button" class="btn btn-outline-primary bdc-amarelo c-amarelo bold upper">SIM</button> </a> <a id="content-smart"> <button type="button" class="btn btn-outline-primary bdc-amarelo c-amarelo bold upper mr-0">NÃO</button> </a>';
+	fullpage.style.display = 'none';
+	menu.style.display = 'none';
+	footer.style.display = 'none';
+}
+
+
 
 const buttonFull = document.getElementById( 'content-full' );
 const buttonSmart = document.getElementById( 'content-smart' );
@@ -261,6 +266,9 @@ function modifyToFull() {
 	fullpage.style.display = 'block';
 	menu.style.display = 'block';
 	footer.style.display = 'block';
+
+	localStorage.setItem('maior18', true);
+
 };
 
 function modifyToSmart() {
