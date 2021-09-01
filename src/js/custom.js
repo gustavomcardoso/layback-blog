@@ -342,15 +342,18 @@ if (!maior18) {
   fullpage.style.display = 'none';
   menu.style.display = 'none';
   footer.style.display = 'none';
+} else if (maior18) {
+  $('#intro').css('display', 'none');
 }
 
+;
 var buttonFull = document.getElementById('content-full');
 var buttonSmart = document.getElementById('content-smart');
 buttonFull.addEventListener('click', modifyToFull, false);
 buttonSmart.addEventListener('click', modifyToSmart, false);
 
 function modifyToFull() {
-  intro.style.display = 'none';
+  $('#intro').css('display', 'none');
   fullpage.style.display = 'block';
   menu.style.display = 'block';
   footer.style.display = 'block';
