@@ -22,10 +22,10 @@
             <div id="listra">
                 <div class="row pt-lg-0 pb-0 justify-content-center">
                     <div class="col-sm-8 col-lg-6 d-flex justify-content-center">
-                        <h2 class="mx-auto c-preto d-none d-lg-inline mb-lg-0 octin">
+                        <h2 class="mx-auto mr-lg-4 mr-xl-5 c-preto d-none d-lg-inline mb-lg-0 octin">
                         RIDE WITH US
                         </h2>
-                        <h2 class="mx-auto c-preto mb-lg-0 octin">
+                        <h2 class="mx-auto ml-lg-4 ml-xl-5 c-preto mb-lg-0 octin">
                         LIVE WITH US
                         </h2>
                     </div>
@@ -42,7 +42,7 @@
             <div class="container">
                 <div class="row align-items-center bgc-preto">
                     <div class="col-12 col-lg-4 mb-5 mb-lg-0 d-flex justify-content-center pt-lg-0 pt-5">
-                        <img class="img-fluid" src="<?= $directory ?>/src/img/icons/logofooter.svg" alt="Layback Logo">
+                        <img class="img-fluid" src="<?php bloginfo('template_directory') ?>/src/img/icons/logofooter.svg" alt="Layback Logo">
                     </div>
                     <div class="col-12 col-lg-3 offset-lg-1 mb-5 mb-lg-0 d-flex flex-column align-items-center">
                         <h2 class="c-amarelo">

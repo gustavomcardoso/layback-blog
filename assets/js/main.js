@@ -8,7 +8,7 @@ $( document ).ready( function() {
 			e.preventDefault();
 
 			$('#s').show().animate({
-				width: "45%",
+				width: "257px",
 				opacity: 1
 			}, 500);
 			$('#searchsubmit').show().animate({opacity:1}, 600,);
@@ -18,7 +18,7 @@ $( document ).ready( function() {
 			e.preventDefault();
 
 			$('#s').hide().animate({
-				width: "0%",
+				width: "0px",
 				opacity: 0
 			}, 500);
 			$('#searchsubmit').hide().animate({opacity: 0}, 500);

@@ -918,29 +918,19 @@ a {
         margin-bottom: 0px;
     }
 
-    .section.one:nth-child(1)::after{
-        content: '';
-            background-image: url(../../src/img/patterns/listra-horizonte.svg);
-            background-repeat: no-repeat;
-            background-position-x: right;
-            background-position-y: top;
-            position: absolute;
-            top: 100px;
-            z-index: -1;
-            width: 100%;
-            height: 20%;
-    }
-    .section.one:nth-child(3)::before{
-            content: '';
-            background-image: url(../../src/img/patterns/listra-vertical.svg);
-            background-repeat: no-repeat;
-            background-position-x: left;
-            background-position-y: bottom;
-            position: absolute;
-            top: 970px;
-            width: 100%;
-            height: 30%;
-            z-index: -1;
+    #fullpageblog{
+        .section.one:nth-child(1){
+                        background-image: url(../../src/img/patterns/listra-horizonte.svg);
+                        background-repeat: no-repeat;
+                        background-size: 807px 496px;
+                        background-position-x: calc(50% - -316px);
+                        background-position-y: 100px;
+            }
+        background-image: url(../../src/img/patterns/listra-vertical.svg);
+        background-repeat: no-repeat;
+        background-size: 348px 826px;
+        background-position-x: calc(50% - 546px);
+        background-position-y: 1243px;
     }
 
     #searchpageblog{
@@ -977,29 +967,11 @@ a {
                 padding-top: 51px;
                 #listra{
                     position: relative;
-                    height: 162px;
-                    &::before{
-                        content: '';
-                        background-image: url(../../src/img/patterns/listradireitanews.svg);
-                        background-repeat: no-repeat;
-                        width: 293px;
-                        height: 130px;
-                        top: 47px;
-                        position: absolute;
-                        left: 6%;
-                        z-index: 0;
-                    }
-                    &::after{
-                        content: '';
-                        background-image: url(../../src/img/patterns/listraesquerdanews.svg);
-                        background-repeat: no-repeat;
-                        width: 293px;
-                        height: 130px;
-                        position: absolute;
-                        top: 47px;
-                        right: 6%;
-                        z-index: 0;
-                    }
+                    height: 176px;
+                    background-image: url(../../src/img/patterns/listranewslg.svg);
+                    background-repeat: no-repeat;
+                    background-position-x: calc(50% - -1px);
+                    background-position-y: bottom;
                 }
                 .col-sm-8{
                     h2{
