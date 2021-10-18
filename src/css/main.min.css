@@ -870,6 +870,9 @@ label.error{font-size:16px;line-height:19px;color:#ff3737}
 .octin{font-family:"Octin College",cursive !important}
 .octin-bold{font-family:"Octin Bold",cursive !important}
 .graduate{font-family:"Graduate",cursive !important}
+.instagram-gallery-medium{width:100%;height:100%;cursor:pointer;display:-moz-flex;display:-ms-flex;display:-o-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.instagram-gallery-medium>a{width:25%;height:100%;position:relative;overflow:hidden;margin:0}
+.instagram-gallery-medium>a>video{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 a:focus,a:active{outline:initial;-webkit-box-shadow:initial;box-shadow:initial}
 a span{color:#121212}
 a:hover{text-decoration:none}
@@ -972,7 +975,9 @@ p{font-family:"Exo 2",sans-serif;font-size:16px;line-height:19px}
 #eleven .bg-insta{background:url(../../src/img/banners/mobile/insta.jpg);background-size:cover;background-position:center}
 #eleven .bg-insta a{color:#121212;font-weight:bold}
 #eleven .bg-insta a:hover{text-decoration:none}
-#eleven .insta{background:#f6d351;width:-webkit-min-content;width:-moz-min-content;width:min-content;padding:12px 28px;-webkit-transition:.5s;transition:.5s}
+#eleven .container-fluid{position:relative}
+#eleven .insta{background:#f6d351;width:-webkit-min-content;width:-moz-min-content;width:min-content;padding:12px 28px;-webkit-transition:.5s;transition:.5s;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:1}
+#eleven .insta h2 a{color:#121212}
 #eleven .insta:hover{color:#404041;background:#fff}
 #footer .container-fluid.bgc-amarelo .row{min-height:0}
 #footer li{display:block;margin-bottom:16px}
@@ -1893,6 +1898,8 @@ section .row{padding:100px 0}
 }@media(max-width:991.98px){.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid{padding-right:0;padding-left:0}
 }@media(max-width:767.98px){.navbar-expand-md>.container,.navbar-expand-md>.container-fluid{padding-right:0;padding-left:0}
 }@media(max-width:575.98px){.navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid{padding-right:0;padding-left:0}
+}@media(max-width:575px){.instagram-gallery-medium{width:320px}
+.instagram-gallery-medium>a{width:50%;height:50%}
 }@media screen and (max-width:390px){#maiormenor .btn{margin-right:0;margin-bottom:10px}
 #header .banner-2 .br-none{display:block}
 }@media print{.d-print-none{display:none !important}

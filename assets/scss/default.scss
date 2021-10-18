@@ -396,11 +396,24 @@ a {
                 }
             }
         }
+        .container-fluid{
+            position: relative; 
+        }
         .insta {
             background: $amarelo;
             width: min-content;
             padding: 12px 28px;
             transition: 0.5s;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+            h2{
+                a{
+                    color: $preto;
+                }
+            }
             &:hover {
                 color: $cinza;
                 background: $branco;
@@ -703,7 +716,9 @@ a {
     }
 }
 
-@media screen and (min-width: $sm) {}
+@media screen and (min-width: $sm) {
+
+}
 
 @media screen and (min-width: $md) {}
 
@@ -1076,6 +1091,8 @@ a {
     #curtimos {
         background-position: center right;
     }
+}
+@media screen and (min-width: 2500px) {
 }
 
 .post-tittle{

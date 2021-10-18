@@ -693,20 +693,18 @@ include get_template_directory() . ('/templates/nav-home.php');
     </section>
 
     <section id="eleven" class="bgc-preto section p-0 fp-auto-height">
-        <div class="bg-insta">
-            <div class="container">
-                <div class="row align-content-center justify-content-center">
-                    <div class="col-12 d-flex align-content-center justify-content-center p-0">
-                        <div class="insta">
-                            <h2 class="c-preto m-0">
-                                <a href="https://www.instagram.com/laybackbeer/" target="_blank" rel="noopener noreferrer">@laybackbeer</a>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
+        <div class="container-fluid">
+
+            <div class="row p-0 align-content-center justify-content-center">
+                <div id="instafeed" class="instagram-gallery-medium col-12 d-flex align-content-center justify-content-center p-0"></div>
+            </div>
+            <div class="insta">
+                <h2 class="c-preto m-0">
+                    <a href="https://www.instagram.com/laybackbeer/" target="_blank" rel="noopener noreferrer">@laybackbeer</a>
+                </h2>
             </div>
         </div>
-    </section>
+</section>
 
 </div>
 

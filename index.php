@@ -29,11 +29,11 @@ $do_not_duplicate[] = $post->ID;
 
 ?>
 
-<?php if ($i == 1) :  ?>
+<?php if ($i == 1) :?>
 	<section class="section two my-5 my-lg-0">
-<?php else : ?>
+<?php else :?>
 	<section class="section one">
-<?php endif; ?>
+<?php endif;?>
 
 			<div class="container mb-5">
 				<div class="row pb-lg-0 align-items-center">

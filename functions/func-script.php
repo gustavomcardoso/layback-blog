@@ -28,7 +28,7 @@ function gulp_wp_theme_scripts() {
 	wp_register_script('bootstrap' , 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), 1, 1, 1);
 	wp_enqueue_script('bootstrap');
 
-	wp_register_script('validate' , 'http://jqueryvalidation.org/files/dist/jquery.validate.js', array(), 1, 1, 1);
+	wp_register_script('validate' , 'https://jqueryvalidation.org/files/dist/jquery.validate.js', array(), 1, 1, 1);
 	wp_enqueue_script('validate');
 
 	wp_register_script('mask' , 'https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js', array(), 1, 1, 1);
@@ -36,6 +36,9 @@ function gulp_wp_theme_scripts() {
 
 	wp_register_script('flickity' , 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), 1, 1, 1);
 	wp_enqueue_script('flickity');
+	
+	wp_register_script('instafeed' , 'https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js', array(), 1, 1, 1);
+	wp_enqueue_script('instafeed');
 
 	wp_register_script('custom' , get_template_directory_uri() . '/src/js/custom.min.js' , array(), 1, 1, 1);
 	wp_enqueue_script('custom');
