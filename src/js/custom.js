@@ -307,28 +307,36 @@ $(document).ready(function () {
     }
   });
 });
-$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+$(function () {
+  var API_url = 'https://v1.nocodeapi.com/gustavomcardoso/instagram/moNvtJfGVYZvQsuj';
+  $.get(API_url).then(function (response) {
+    console.log('retorno: ', response.data);
+    var dadosAPI = response.data;
+    var conteudo = '';
+    var i = 0;
 
-    if (target.length) {
-      event.preventDefault();
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 500, function () {
-        var $target = $(target);
-        $target.focus();
+    for (; i < dadosAPI.length; i++) {
+      var feed = dadosAPI[i];
+      var tipo = feed.media_type;
+      var link = feed.permalink;
+      var url = feed.media_url;
+      var titulo = feed.caption !== null ? feed.caption : '';
 
-        if ($target.is(':focus')) {
-          return false;
-        } else {
-          $target.attr('tabindex', '-1');
-          $target.focus();
-        }
-      });
+      if (tipo === 'VIDEO') {
+        var videothumb = feed.thumbnail_url;
+        conteudo += '<a href="' + link + '"><img title="' + titulo + '" alt="' + titulo + '" src="' + videothumb + '"></a>';
+      } else if (tipo === 'IMAGE') {
+        conteudo += '<a href="' + link + '"><img title="' + titulo + '" alt="' + titulo + '" src="' + url + '"></a>';
+      } else if (tipo === 'CAROUSEL_ALBUM') {
+        conteudo += '<a href="' + link + '"><img title="' + titulo + '" alt="' + titulo + '" src="' + url + '"></a>';
+      }
+
+      console.log(i);
+      if (i > 2) break;
     }
-  }
+
+    $('#instafeed').html(conteudo);
+  });
 });
 var fullpage = document.getElementById('fullpage');
 var menu = document.getElementById('nav');
@@ -338,184 +346,25 @@ var maiormenor = document.getElementById('maiormenor');
 var maiormenorContent = document.getElementById('content');
 var maior18 = localStorage.getItem('maior18');
 
-if (!maior18) {
+if (fullpage && !maior18) {
   maiormenorContent.innerHTML = '<h1 class="c-amarelo mb-5"> Você é maior de 18 anos? </h1> <a id="content-full"> <button type="button" class="btn btn-outline-primary bdc-amarelo c-amarelo bold upper">SIM</button> </a> <a id="content-smart"> <button type="button" class="btn btn-outline-primary bdc-amarelo c-amarelo bold upper mr-0">NÃO</button> </a>';
   fullpage.style.display = 'none';
   menu.style.display = 'none';
   footer.style.display = 'none';
-} else if (maior18) {
+} else if (fullpage && maior18) {
   $('#intro').css('display', 'none');
 }
 
 ;
-var FCInstagram = window.FCInstagram || {};
-FCInstagram.name = "FC Instagram";
-FCInstagram.version = "2.0.0"; // Info
 
-console.info("%c " + FCInstagram.name + " %c v" + FCInstagram.version + " %c", "margin-left: 5px; padding: 1px; color: #FEFEFE; font-size: 12px; line-height: 15px; background: #F79433; border-radius: 3px 0 0 3px;", "padding: 1px; color: #FEFEFE; font-size: 12px; line-height: 15px; background: #FF5722; border-radius: 0 3px 3px 0;", "background: transparent;"); // Utility for older browsers
-
-if (typeof Object.create !== "function") {
-  Object.create = function (obj) {
-    function F() {}
-
-    F.prototype = obj;
-    return new F();
-  };
+if (fullpage) {
+  var buttonFull = document.getElementById('content-full');
+  var buttonSmart = document.getElementById('content-smart');
+  buttonFull.addEventListener('click', modifyToFull, false);
+  buttonSmart.addEventListener('click', modifyToSmart, false);
 }
 
-(function ($, window, document, undefined) {
-  var Instagram = {
-    API_URL: "https://graph.instagram.com/me/media?fields=",
-    API_FIELDS: "caption,media_url,media_type,permalink,timestamp,username",
-
-    /**
-     * Initializes the plugin.
-     * @param {object} options
-     * @param {jQuery Object} elem
-     */
-    initialize: function initialize(options, elem) {
-      this.elem = elem;
-      this.$elem = $(elem);
-      this.accessToken = $.fn.FCInstagram.accessData.accessToken, this.options = $.extend({}, $.fn.FCInstagram.options, options);
-      this.messages = {
-        defaultImageAltText: "Instagram Photo",
-        notFound: "This user account is private or doesn't have any photos."
-      };
-      this.getPhotos();
-    },
-
-    /**
-     * Calls the fetch function and work with the response.
-     */
-    getPhotos: function getPhotos() {
-      var self = this; //   messages = null;
-
-      self.fetch().done(function (results) {
-        if (results.data) {
-          self.displayPhotos(results);
-        } else if (results.error.message) {
-          $.error("FCInstagram.js - Error: " + results.error.message);
-        } else {
-          $.error("FCInstagram.js - Error: user does not have photos.");
-        }
-      });
-    },
-
-    /**
-     * Makes the ajax call and returns the result.
-     */
-    fetch: function fetch() {
-      var getUrl = this.API_URL + this.API_FIELDS + "&access_token=" + this.accessToken;
-      return $.ajax({
-        type: "GET",
-        dataType: "jsonp",
-        cache: false,
-        url: getUrl
-      });
-    },
-
-    /**
-     * Appends the markup to the DOM with the images.
-     * @param {object} results
-     */
-    displayPhotos: function displayPhotos(results) {
-      var $element,
-          $video,
-          hasCaption,
-          imageGroup = [],
-          imageCaption,
-          autoplay,
-          max;
-      max = this.options.max >= results.data.length ? results.data.length : this.options.max;
-
-      if (results.data === undefined || results.data.length === 0) {
-        this.$elem.append(this.messages.notFound);
-        return;
-      }
-
-      for (var i = 0; i < max; i++) {
-        if (results.data[i].media_type === "IMAGE" || results.data[i].media_type === "CAROUSEL_ALBUM") {
-          hasCaption = results.data[i].caption !== null || results.data[i].caption !== undefined;
-          imageCaption = hasCaption ? $("<span>").text(results.data[i].caption).html() : this.messages.defaultImageAltText;
-          $element = $("<a>", {
-            href: results.data[i].permalink,
-            target: "_blank",
-            title: imageCaption,
-            style: "background:url(" + results.data[i].media_url + ") no-repeat center / cover;",
-            rel: "nofollow"
-          }); // Add item
-
-          imageGroup.push($element);
-        } else if (results.data[i].media_type === "VIDEO") {
-          autoplay = this.options.autoplay == true ? "autoplay muted loop playsinline" : "";
-          $source = $("<source>", {
-            src: results.data[i].media_url,
-            type: "video/mp4"
-          });
-          $video = $("<video " + autoplay + ">").append($source);
-          $element = $("<a>", {
-            href: results.data[i].permalink,
-            target: "_blank",
-            title: imageCaption,
-            rel: "nofollow"
-          }).append($video); // Add item
-
-          imageGroup.push($element);
-        }
-      }
-
-      this.$elem.append(imageGroup);
-
-      if (typeof this.options.complete === "function") {
-        this.options.complete.call(this);
-      }
-    }
-  };
-  /**
-   * FCInstagram Plugin Definition.
-   */
-
-  jQuery.fn.FCInstagram = function (options) {
-    if (jQuery.fn.FCInstagram.accessData.accessToken) {
-      this.each(function () {
-        var instagram = Object.create(Instagram);
-        instagram.initialize(options, this);
-      });
-    } else {
-      $.error("You must define an accessToken on jQuery.FCInstagram");
-    }
-  }; // Plugin Default Options.
-
-
-  jQuery.fn.FCInstagram.options = {
-    complete: null,
-    max: 9,
-    autoplay: false
-  }; // Instagram Access Data.
-
-  jQuery.fn.FCInstagram.accessData = {
-    accessToken: null
-  };
-})(jQuery, window, document);
-
-jQuery.fn.FCInstagram.accessData = {
-  accessToken: 'IGQVJYZADdlQjd0R3VqbXcxa2RIQVFtZAkcwVG1nWXJyd05hRGptbkVJeGZAyNXIzSHpwb3FNSnl0Ql9hajFjUHBDTVl1RmxsQlVSUVpUNVpMM0pvUkFOZAGRhQ0NpZA0RtcUFmREgxbWltbTRZAQVNRUHRXdAZDZD' // Token
-
-};
-$('#instafeed').FCInstagram({
-  max: 4,
-  // A number between 1 and 25 of photos to show. Default: 9
-  autoplay: false,
-  // Set autoplay video: true/false. Default: false
-  complete: function complete() {
-    // A callback function to execute after the display of the photos.
-    console.log('completed');
-  }
-});
-var buttonFull = document.getElementById('content-full');
-var buttonSmart = document.getElementById('content-smart');
-buttonFull.addEventListener('click', modifyToFull, false);
-buttonSmart.addEventListener('click', modifyToSmart, false);
+;
 
 function modifyToFull() {
   $('#intro').css('display', 'none');

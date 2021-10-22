@@ -5,7 +5,9 @@
         <div class="container-fluid">
 
             <div class="row p-0 align-content-center justify-content-center">
-                <div id="instafeed" class="instagram-gallery-medium col-12 d-flex align-content-center justify-content-center p-0"></div>
+                <div id="instafeed" class="instagram-gallery-medium col-12 d-flex align-content-center justify-content-center p-0">
+
+                </div>
             </div>
             <div class="insta">
                 <h2 class="c-preto m-0">
@@ -73,43 +75,36 @@
                                 </div>
                                 <div class="col-4 col-lg-12 pl-0 pr-0">
                                     <li>
+                                        <a href="<?= home_url('/blog'); ?>">Blog</a>
+                                    </li>
+                                    <li>
                                         <a href="<?= home_url('/#fullpage'); ?>">Home</a>
                                     </li>
                                     <li>
                                         <a href="<?= home_url('/#one'); ?>">Sobre</a>
                                     </li>
-                                    <li>
-                                        <a href="<?= home_url('/#onebeer'); ?>">beer</a>
-                                    </li>
+
 
                                 </div>
                                 <div class="col-4 col-lg-12 pl-0 pr-0">
+                                    <li>
+                                        <a href="<?= home_url('/#onebeer'); ?>">beer</a>
+                                    </li>
                                     <li>
                                         <a href="<?= home_url('/#seven'); ?>">park</a>
                                     </li>
                                     <li>
                                         <a href="<?= home_url('/#eight'); ?>">Família</a>
                                     </li>
-                                    <li>
-                                        <a href="<?= home_url('#nine'); ?>">associados</a>
-                                    </li>
 
                                 </div>
                                 <div class="col-4 col-lg-12 pl-0 pr-0">
-
+                                <li>
+                                        <a href="<?= home_url('#nine'); ?>">associados</a>
+                                    </li>
                                     <li>
                                         <a href="<?= home_url('/#curtimos'); ?>">Loja</a>
                                     </li>
-                                    <li>
-                                        <a href="<?= home_url('/#ten'); ?>">notícias</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?= home_url('/blog'); ?>">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#footer">contato</a>
-                                    </li>
-
                                 </div>
                             </div>
                         </div>

@@ -871,8 +871,8 @@ label.error{font-size:16px;line-height:19px;color:#ff3737}
 .octin-bold{font-family:"Octin Bold",cursive !important}
 .graduate{font-family:"Graduate",cursive !important}
 .instagram-gallery-medium{width:100%;height:100%;cursor:pointer;display:-moz-flex;display:-ms-flex;display:-o-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.instagram-gallery-medium a img{width:100%;height:100%}
 .instagram-gallery-medium>a{width:25%;height:100%;position:relative;overflow:hidden;margin:0}
-.instagram-gallery-medium>a>video{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 a:focus,a:active{outline:initial;-webkit-box-shadow:initial;box-shadow:initial}
 a span{color:#121212}
 a:hover{text-decoration:none}
