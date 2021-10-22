@@ -117,91 +117,109 @@ $( document ).ready( function() {
 
 });
 
-$( window ).scroll( function() {
-	const beginTop = 50;
-	let scroll = $( window ).scrollTop();
-
-	if ( scroll >= beginTop ) {
-		$( '#nav' ).addClass( 'nav-shadow' );
-		$( '#navblog' ).addClass( 'nav-white' );
+$(window).scroll(function () {
+	var beginTop = 50;
+	var scroll = $(window).scrollTop();
+	if (scroll >= beginTop) {
+	  $('#nav').addClass('nav-shadow');
+	  $('#navblog').addClass('nav-white');
 	} else {
-		$( '#nav' ).removeClass( 'nav-shadow' );
-		$( '#navblog' ).removeClass( 'nav-white' );
+	  $('#nav').removeClass('nav-shadow');
+	  $('#navblog').removeClass('nav-white');
 	}
-});
-
-$( document ).ready( function() {
-	$( '#formModal' ).validate({
-		rules: {
-			nome: {
-				required: true,
-				minlength: 3
-			},
-			email: {
-				required: true,
-				email: true
-			},
-			telefone: {
-				required: true,
-				minlength: 10,
-				number: true
-			}
+  });
+  $(document).ready(function () {
+	$('#formModal').validate({
+	  rules: {
+		nome: {
+		  required: true,
+		  minlength: 3
 		},
-		messages: {
-			nome: {
-				required: 'Este campo está vazio',
-				minlength: 'Ops, esse campo precisa ter mais de 3 caracteres'
-			},
-			email: {
-				required: 'Este campo está vazio',
-				email: 'Insira um e-mail válido'
-			},
-			telefone: {
-				required: 'Este campo está vazio',
-				minlength: 'Ops, insira um telefone válido',
-				number: 'Ops, insira um telefone válido'
-			}
-		}
-	});
-
-	$( '#contato-form' ).validate({
-		rules: {
-			nome: {
-				required: true,
-				minlength: 3
-			},
-			email: {
-				required: true,
-				email: true
-			},
-			assunto: {
-				required: true
-			},
-			mensagem: {
-				required: true,
-				minlength: 3
-			}
+		email: {
+		  required: true,
+		  email: true
 		},
-		messages: {
-			nome: {
-				required: 'Este campo está vazio',
-				minlength: 'Ops, esse campo precisa ter mais de 3 caracteres'
-			},
-			email: {
-				required: 'Este campo está vazio',
-				email: 'Insira um e-mail válido'
-			},
-			assunto: {
-				required: 'Este campo está vazio',
-				minlength: 'Escolha um assunto'
-			},
-			mensagem: {
-				required: 'Insira uma mensagem válida',
-				minlength: 'Insira uma mensagem válida'
-			}
+		telefone: {
+		  required: true,
+		  minlength: 10,
+		  number: true
 		}
+	  },
+	  messages: {
+		nome: {
+		  required: 'Este campo está vazio',
+		  minlength: 'Ops, esse campo precisa ter mais de 3 caracteres'
+		},
+		email: {
+		  required: 'Este campo está vazio',
+		  email: 'Insira um e-mail válido'
+		},
+		telefone: {
+		  required: 'Este campo está vazio',
+		  minlength: 'Ops, insira um telefone válido',
+		  number: 'Ops, insira um telefone válido'
+		}
+	  }
 	});
-});
+	$('#contato-form').validate({
+	  rules: {
+		nome: {
+		  required: true,
+		  minlength: 3
+		},
+		email: {
+		  required: true,
+		  email: true
+		},
+		assunto: {
+		  required: true
+		},
+		mensagem: {
+		  required: true,
+		  minlength: 3
+		}
+	  },
+	  messages: {
+		nome: {
+		  required: 'Este campo está vazio',
+		  minlength: 'Ops, esse campo precisa ter mais de 3 caracteres'
+		},
+		email: {
+		  required: 'Este campo está vazio',
+		  email: 'Insira um e-mail válido'
+		},
+		assunto: {
+		  required: 'Este campo está vazio',
+		  minlength: 'Escolha um assunto'
+		},
+		mensagem: {
+		  required: 'Insira uma mensagem válida',
+		  minlength: 'Insira uma mensagem válida'
+		}
+	  }
+	});
+  });
+  $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
+	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	  var target = $(this.hash);
+	  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	  if (target.length) {
+		event.preventDefault();
+		$('html, body').animate({
+		  scrollTop: target.offset().top
+		}, 500, function () {
+		  var $target = $(target);
+		  $target.focus();
+		  if ($target.is(':focus')) {
+			return false;
+		  } else {55
+			$target.attr('tabindex', '-1');
+			$target.focus();
+		  }
+		});
+	  }
+	}
+  });
 
 $(function(){
 
