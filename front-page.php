@@ -722,7 +722,6 @@ include get_template_directory() . ('/templates/nav-home.php');
                     $maxpost = new WP_Query(array('posts_per_page' => 3));
                     if ($maxpost->have_posts()) : while ($maxpost->have_posts()) : $maxpost->the_post();
                     $custom_field = get_field('link_externo');
-                    $format = get_post_format() ? : 'standard'
                 ?>
                 <?php if (has_post_format( 'link' )) :?>
 
