@@ -71,7 +71,7 @@ $do_not_duplicate[] = $post->ID;
 						<small class="tahoma mb-3">
 							<?= get_the_date('d'). ' ' . 'de' . ' ' . get_the_date('F') . ' ' . 'de' . ' ' . get_the_date('Y'); ?>
 						</small>
-						<a href="<?php echo $custom_field; ?>" rel="bookmark" title="Link direto para <?php the_title_attribute();?>" class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
+						<a href="<?php echo $custom_field; ?>" target="_blank" rel="bookmark" title="Link direto para <?php the_title_attribute();?>" class="btn bgc-amarelo-blog bgc-amarelo c-preto octin">
 							LEIA MAIS
 						</a>
 					</div>
@@ -122,7 +122,7 @@ endwhile; else : ?>
 
 				<?php if (has_post_format( 'link' )) :?>
 
-					<a href="<?php echo $custom_field; ?>" class="carousel-cell col-12 col-lg-4">
+					<a href="<?php echo $custom_field; ?>" target="_blank" class="carousel-cell col-12 col-lg-4">
 						<div class="card-image">
 							<?php the_post_thumbnail();?>
 						</div>

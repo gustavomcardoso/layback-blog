@@ -741,7 +741,7 @@ include get_template_directory() . ('/templates/nav-home.php');
                                     <p class="c-preto">
                                         <?php the_excerpt() ?>
                                     </p>
-                                    <a href="<?php echo $custom_field; ?>">
+                                    <a href="<?php echo $custom_field; ?>" target="_blank">
                                         Leia mais
                                         <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
                                     </a>
@@ -767,7 +767,7 @@ include get_template_directory() . ('/templates/nav-home.php');
                                     <p class="c-preto">
                                         <?php the_excerpt() ?>
                                     </p>
-                                    <a href="<?php the_permalink(); ?>">
+                                    <a href="<?php the_permalink(); ?>" >
                                         Leia mais
                                         <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
                                     </a>
