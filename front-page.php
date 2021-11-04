@@ -80,8 +80,13 @@ include get_template_directory() . ('/templates/nav-home.php');
                         LAYBACK É SKATE.<br class="d-sm-none"> É UNIÃO.<br> É CULTURA. E É CERVEJA
                     </h2>
                     <p class="c-amarelo mt-3">
-                        A LayBack Beer nasceu no coração do skate, da arte e da música em Florianópolis: o bairro de Rio Tavares. Surgiu do ideal de engarrafar e compartilhar o sentimento dos momentos únicos da vida.Surgiu para ser uma cerveja que incentiva o esporte e apoia os atletas do skate e do surf mundial.<br><br>
-                        Nosso ingrediente: tudo o que acreditamos.<br><br> Somos uma família. Uma galera unida que transformou nosso bairro em um movimento de cultura alternativa e referência mundial no skate. Somos RTMF, os “Rio Tavares Mother F*ckers”.<br><br>
+                        A LayBack Beer nasceu no coração do skate, da arte e da música em Florianópolis: o bairro de Rio
+                        Tavares. Surgiu do ideal de engarrafar e compartilhar o sentimento dos momentos únicos da
+                        vida.Surgiu para ser uma cerveja que incentiva o esporte e apoia os atletas do skate e do surf
+                        mundial.<br><br>
+                        Nosso ingrediente: tudo o que acreditamos.<br><br> Somos uma família. Uma galera unida que
+                        transformou nosso bairro em um movimento de cultura alternativa e referência mundial no skate.
+                        Somos RTMF, os “Rio Tavares Mother F*ckers”.<br><br>
                         A LayBack é feita para nós, e para vocês.<br>
                         Vem com a gente.<br>
                         Ride with us.
@@ -96,8 +101,10 @@ include get_template_directory() . ('/templates/nav-home.php');
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
                     <div class="box-img-parkbeer">
-                        <img class="d-none d-sm-block img-fluid" src="<?= $directory ?>/src/img/patterns/familia-pattern.png" alt="">
-                        <img class="d-sm-none img-fluid" src="<?= $directory ?>/src/img/patterns/familia-pattern-mobile.png" alt="">
+                        <img class="d-none d-sm-block img-fluid"
+                            src="<?= $directory ?>/src/img/patterns/familia-pattern.png" alt="">
+                        <img class="d-sm-none img-fluid"
+                            src="<?= $directory ?>/src/img/patterns/familia-pattern-mobile.png" alt="">
                     </div>
                     <div class="box-parkbeer">
                         <p class="c-branco  text-center mb-0">
@@ -112,7 +119,8 @@ include get_template_directory() . ('/templates/nav-home.php');
                             SABE POR QUê?
                         </h3>
                         <p class="c-branco  text-center">
-                            Somos a marca que mais apoia a cena desses esportes. Nosso objetivo é mostrar ao mundo que nossa cultura é sinônimo de união e amizade.
+                            Somos a marca que mais apoia a cena desses esportes. Nosso objetivo é mostrar ao mundo que
+                            nossa cultura é sinônimo de união e amizade.
                         </p>
                     </div>
                 </div>
@@ -135,7 +143,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                         PILSEN
                     </h2>
                     <p class="c-amarelo mt-3">
-                        Cerveja clara e cristalina. De cor brilhante, apresenta uma bela formação de espuma e seu aroma remete ao malte, características que se confirmam no paladar. Muito refrescante e com ótima suavidade.
+                        Cerveja clara e cristalina. De cor brilhante, apresenta uma bela formação de espuma e seu aroma
+                        remete ao malte, características que se confirmam no paladar. Muito refrescante e com ótima
+                        suavidade.
                         Harmoniza com entradas diversas e queijos frescos como minas, ricota ou burrata.<br><br>
 
                         Temperatura de serviço: 2 a 4ºC
@@ -157,7 +167,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                         PILSEN
                     </h2>
                     <p class="c-amarelo mt-3">
-                        Cerveja clara e cristalina. De cor brilhante, apresenta uma bela formação de espuma e seu aroma remete ao malte, características que se confirmam no paladar. Muito refrescante e com ótima suavidade.
+                        Cerveja clara e cristalina. De cor brilhante, apresenta uma bela formação de espuma e seu aroma
+                        remete ao malte, características que se confirmam no paladar. Muito refrescante e com ótima
+                        suavidade.
                         Harmoniza com entradas diversas e queijos frescos como minas, ricota ou burrata.<br><br>
 
                         Temperatura de serviço: 2 a 4ºC
@@ -192,7 +204,8 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
 
                     <p class="c-amarelo mt-3">
-                        Cerveja bastante elegante e aromática, com notas cítricas vindas do lúpulo, amargor médio, corpo leve e final seco, deixando o paladar limpo e pedindo o próximo gole.
+                        Cerveja bastante elegante e aromática, com notas cítricas vindas do lúpulo, amargor médio, corpo
+                        leve e final seco, deixando o paladar limpo e pedindo o próximo gole.
                         Harmoniza com carnes vermelhas, queijos gordurosos como cheddar, gruyère e emmental.<br><br>
 
                         Temperatura de serviço: 5 a 7ºC
@@ -215,7 +228,8 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
 
                     <p class="c-amarelo mt-3">
-                        Cerveja bastante elegante e aromática, com notas cítricas vindas do lúpulo, amargor médio, corpo leve e final seco, deixando o paladar limpo e pedindo o próximo gole.
+                        Cerveja bastante elegante e aromática, com notas cítricas vindas do lúpulo, amargor médio, corpo
+                        leve e final seco, deixando o paladar limpo e pedindo o próximo gole.
                         Harmoniza com carnes vermelhas, queijos gordurosos como cheddar, gruyère e emmental.<br><br>
 
                         Temperatura de serviço: 5 a 7ºC
@@ -246,7 +260,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
 
                     <p class="c-amarelo mt-3">
-                        Cerveja forte e escura do estilo India Pale Ale. Apresenta coloração âmbar, brilhante e um denso creme. Possui aroma floral, cítrico e frutado. De sabor refrescante, evidencia notas condimentadas e o característico amargor do estilo.
+                        Cerveja forte e escura do estilo India Pale Ale. Apresenta coloração âmbar, brilhante e um denso
+                        creme. Possui aroma floral, cítrico e frutado. De sabor refrescante, evidencia notas
+                        condimentadas e o característico amargor do estilo.
                         Harmoniza com hambúrguer e queijos como grana padano, parmesão ou pecorino.<br><br>
 
                         Temperatura de serviço: 4 a 7ºC
@@ -270,7 +286,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
 
                     <p class="c-amarelo mt-3">
-                        Cerveja forte e escura do estilo India Pale Ale. Apresenta coloração âmbar, brilhante e um denso creme. Possui aroma floral, cítrico e frutado. De sabor refrescante, evidencia notas condimentadas e o característico amargor do estilo.
+                        Cerveja forte e escura do estilo India Pale Ale. Apresenta coloração âmbar, brilhante e um denso
+                        creme. Possui aroma floral, cítrico e frutado. De sabor refrescante, evidencia notas
+                        condimentadas e o característico amargor do estilo.
                         Harmoniza com hambúrguer e queijos como grana padano, parmesão ou pecorino.<br><br>
 
                         Temperatura de serviço: 4 a 7ºC
@@ -355,10 +373,17 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <p class="c-branco">Um espaço para todos, feito para celebrar o espírito e a cultura do skate. Os Parks, Casas Dipraia, Basement, Brewpub e Surf House, são os ambientes de experimentação da nossa vibe, a materialização de tudo o que acreditamos e da cultura RTMF. Mais que uma pista de skate, é um espaço inclusivo, feito para criar momentos únicos. É um ambiente aberto, que traz tudo o que </p>
+                    <p class="c-branco">Um espaço para todos, feito para celebrar o espírito e a cultura do skate. Os
+                        Parks, Casas Dipraia, Basement, Brewpub e Surf House, são os ambientes de experimentação da
+                        nossa vibe, a materialização de tudo o que acreditamos e da cultura RTMF. Mais que uma pista de
+                        skate, é um espaço inclusivo, feito para criar momentos únicos. É um ambiente aberto, que traz
+                        tudo o que </p>
                 </div>
                 <div class="d-none d-lg-block col-lg-6">
-                    <p class="c-branco">amamos e onde promovemos nosso estilo de vida: conectando, inspirando e abraçando todos os tipos de pessoas. Quer beber com os amigos? Temos cerveja. Quer andar de skate (ou aprender)? Temos pista. Quer comer? Temos um centro gastronômico. Tattoo? Passeio em família? Shows? Rolê com os amigos? Arte urbana? Estaremos sempre de portas abertas. </p>
+                    <p class="c-branco">amamos e onde promovemos nosso estilo de vida: conectando, inspirando e
+                        abraçando todos os tipos de pessoas. Quer beber com os amigos? Temos cerveja. Quer andar de
+                        skate (ou aprender)? Temos pista. Quer comer? Temos um centro gastronômico. Tattoo? Passeio em
+                        família? Shows? Rolê com os amigos? Arte urbana? Estaremos sempre de portas abertas. </p>
                 </div>
                 <div id="carousel-parks">
                     <div class="col-10 col-lg-3">
@@ -368,11 +393,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     PARK Floripa
                                 </span>
-                                <p class="c-branco">Foi aqui que o sonho teve início e onde tudo aconteceu. De frente para a Lagoa da Conceição, o LayBack Park Floripa já é um verdadeiro ponto turístico da cidade.
+                                <p class="c-branco">Foi aqui que o sonho teve início e onde tudo aconteceu. De frente
+                                    para a Lagoa da Conceição, o LayBack Park Floripa já é um verdadeiro ponto turístico
+                                    da cidade.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/lbpark_floripa/" target="_blank" rel="noopener noreferrer"> @lbpark_floripa</a>
+                                    <a href="https://www.instagram.com/lbpark_floripa/" target="_blank"
+                                        rel="noopener noreferrer"> @lbpark_floripa</a>
 
 
                                 </p>
@@ -386,11 +414,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     PARK brasília
                                 </span>
-                                <p class="c-branco"> Este é o espaço para a nossa vibe na capital do País. O LayBack Park Brasília traz skate, gastronomia, arte, música, diversidade e união para um só lugar.
+                                <p class="c-branco"> Este é o espaço para a nossa vibe na capital do País. O LayBack
+                                    Park Brasília traz skate, gastronomia, arte, música, diversidade e união para um só
+                                    lugar.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/lbpark_bsb/" target="_blank" rel="noopener noreferrer"> @lbpark_bsb</a>
+                                    <a href="https://www.instagram.com/lbpark_bsb/" target="_blank"
+                                        rel="noopener noreferrer"> @lbpark_bsb</a>
 
                                 </p>
                             </div>
@@ -404,11 +435,13 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     PARK são paulo
                                 </span>
-                                <p class="c-branco">O LayBack Park São Paulo é o lugar certo para viver a cultura do skate e arte urbana na cidade onde todo mundo está e onde tudo acontece.
+                                <p class="c-branco">O LayBack Park São Paulo é o lugar certo para viver a cultura do
+                                    skate e arte urbana na cidade onde todo mundo está e onde tudo acontece.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/lbpark_sp/" target="_blank" rel="noopener noreferrer"> @lbpark_sp</a>
+                                    <a href="https://www.instagram.com/lbpark_sp/" target="_blank"
+                                        rel="noopener noreferrer"> @lbpark_sp</a>
 
                                 </p>
                             </div>
@@ -422,11 +455,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     PARK Belo Horizonte
                                 </span>
-                                <p class="c-branco"> A capital mineira já é conhecida pela cultura e gastronomia. O LayBack Park Belo Horizonte veio para agregar com a energia e colaboratividade do nosso estilo de vida.
+                                <p class="c-branco"> A capital mineira já é conhecida pela cultura e gastronomia. O
+                                    LayBack Park Belo Horizonte veio para agregar com a energia e colaboratividade do
+                                    nosso estilo de vida.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/lbpark_bh/" target="_blank" rel="noopener noreferrer"> @lbpark_bh</a>
+                                    <a href="https://www.instagram.com/lbpark_bh/" target="_blank"
+                                        rel="noopener noreferrer"> @lbpark_bh</a>
 
                                 </p>
                             </div>
@@ -441,11 +477,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     CASA DIPRAIA floripa
                                 </span>
-                                <p class="c-branco">No coração do Campeche, a Casa Dipraia traz a nossa vibe em uma nova vertente dos Parks, com gastronomia, beach tennis, escola de surf e kitesurf e um visual incrível.
+                                <p class="c-branco">No coração do Campeche, a Casa Dipraia traz a nossa vibe em uma nova
+                                    vertente dos Parks, com gastronomia, beach tennis, escola de surf e kitesurf e um
+                                    visual incrível.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/casadipraialayback/" target="_blank" rel="noopener noreferrer"> @casadipraialayback</a>
+                                    <a href="https://www.instagram.com/casadipraialayback/" target="_blank"
+                                        rel="noopener noreferrer"> @casadipraialayback</a>
 
 
                                 </p>
@@ -459,7 +498,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     CASA DIPRAIA BRASÍLIA
                                 </span>
-                                <p class="c-branco"> A vibe da Casa Dipraia LayBack chega em Brasília. Na beira do lago Paranoá, teremos quadras de beach tennis, gastronomia e muito astral para curtir a vida com a gente.
+                                <p class="c-branco"> A vibe da Casa Dipraia LayBack chega em Brasília. Na beira do lago
+                                    Paranoá, teremos quadras de beach tennis, gastronomia e muito astral para curtir a
+                                    vida com a gente.
                                 </p>
                             </div>
                         </div>
@@ -471,11 +512,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     CASA DIPRAIA BH
                                 </span>
-                                <p class="c-branco"> A vibe da Casa Dipraia LayBack chega em Belo Horizonte em uma estrutura com 9 quadras de beach tennis, gastronomia e muito astral para curtir a vida com a gente.
+                                <p class="c-branco"> A vibe da Casa Dipraia LayBack chega em Belo Horizonte em uma
+                                    estrutura com 9 quadras de beach tennis, gastronomia e muito astral para curtir a
+                                    vida com a gente.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/casadipraiabh/" target="_blank" rel="noopener noreferrer"> @casadipraiabh</a>
+                                    <a href="https://www.instagram.com/casadipraiabh/" target="_blank"
+                                        rel="noopener noreferrer"> @casadipraiabh</a>
 
                                 </p>
                             </div>
@@ -505,14 +549,18 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     surfhouse & basement
                                 </span>
-                                <p class="c-branco">Em parceria com a rede de hotéis Selina, unimos a cultura underground do skate em uma pista coberta, com o visual e as ondas alucinantes da praia Mole.
+                                <p class="c-branco">Em parceria com a rede de hotéis Selina, unimos a cultura
+                                    underground do skate em uma pista coberta, com o visual e as ondas alucinantes da
+                                    praia Mole.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/layback.surfhouse/" target="_blank" rel="noopener noreferrer"> @layback.surfhouse</a>
+                                    <a href="https://www.instagram.com/layback.surfhouse/" target="_blank"
+                                        rel="noopener noreferrer"> @layback.surfhouse</a>
                                     <br>
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/laybackbasement/" target="_blank" rel="noopener noreferrer"> @laybackbasement</a>
+                                    <a href="https://www.instagram.com/laybackbasement/" target="_blank"
+                                        rel="noopener noreferrer"> @laybackbasement</a>
                                 </p>
                             </div>
                         </div>
@@ -524,7 +572,8 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     brewpub floripa
                                 </span>
-                                <p class="c-branco"> Este é o nosso primeiro Brewpub, onde oferecemos receitas inovadoras de chopp, além da harmonização com uma gastronomia de primeira linha.
+                                <p class="c-branco"> Este é o nosso primeiro Brewpub, onde oferecemos receitas
+                                    inovadoras de chopp, além da harmonização com uma gastronomia de primeira linha.
                                 </p>
                             </div>
                         </div>
@@ -536,11 +585,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     PARK SANTOS
                                 </span>
-                                <p class="c-branco">Este é o espaço para a nossa vibe no litoral de São Paulo. O LayBack Park Santos traz skate, gastronomia, arte, música, diversidade e união para um só lugar.
+                                <p class="c-branco">Este é o espaço para a nossa vibe no litoral de São Paulo. O LayBack
+                                    Park Santos traz skate, gastronomia, arte, música, diversidade e união para um só
+                                    lugar.
                                 </p>
                                 <p class="c-branco">
                                     <img src="<?= $directory ?>/src/img/icons/icons_instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/lbpark_santos/" target="_blank" rel="noopener noreferrer"> @lbpark_santos</a>
+                                    <a href="https://www.instagram.com/lbpark_santos/" target="_blank"
+                                        rel="noopener noreferrer"> @lbpark_santos</a>
 
                                 </p>
                             </div>
@@ -553,7 +605,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                                 <span class="c-amarelo">
                                     PARK criciúma
                                 </span>
-                                <p class="c-branco"> Este é nosso espaço dentro do Parque Altair Guidi. O LayBack Park Santos traz skate, gastronomia, arte, música, diversidade e união ao lado de um incrível skatepark.
+                                <p class="c-branco"> Este é nosso espaço dentro do Parque Altair Guidi. O LayBack Park
+                                    Santos traz skate, gastronomia, arte, música, diversidade e união ao lado de um
+                                    incrível skatepark.
                                 </p>
 
                             </div>
@@ -572,11 +626,14 @@ include get_template_directory() . ('/templates/nav-home.php');
                         Ride with us.
                     </h2>
                     <p class="c-branco text-lg-center">
-                        LayBack é rua, bar, praia, mar. É pista, cimento, show.<br class="d-none d-lg-block"> É música, é atitude, rolê. É amizade. É junto. É separado. <br class="d-none d-lg-block"> É você. É nóis.
+                        LayBack é rua, bar, praia, mar. É pista, cimento, show.<br class="d-none d-lg-block"> É música,
+                        é atitude, rolê. É amizade. É junto. É separado. <br class="d-none d-lg-block"> É você. É nóis.
                     </p>
 
-                    <img src="<?= $directory ?>/src/img/patterns/familia-mobile.png" alt="" class="img-fluid d-block d-sm-none mt-5 mx-auto mb-5 ">
-                    <img src="<?= $directory ?>/src/img/patterns/familia.png" alt="" class="img-fluid mt-5 d-none d-sm-block mb-5">
+                    <img src="<?= $directory ?>/src/img/patterns/familia-mobile.png" alt=""
+                        class="img-fluid d-block d-sm-none mt-5 mx-auto mb-5 ">
+                    <img src="<?= $directory ?>/src/img/patterns/familia.png" alt=""
+                        class="img-fluid mt-5 d-none d-sm-block mb-5">
 
                     <h2 class="c-amarelo pb-5">
                         Curtimos a vida com paixão e união. Assim, todos podemos brindar juntos!
@@ -595,7 +652,9 @@ include get_template_directory() . ('/templates/nav-home.php');
                         LayBack membership Card
                     </h2>
                     <p class="c-branco">
-                        Curta os LayBack Parks de todo país com vantagens exclusivas. Assine o LayBack Membership Card e ganhe vantagens como desconto na compra das cervejas, desconto no consumo nos parks, reservas da pista de skate para uma session com os amigos, promoções
+                        Curta os LayBack Parks de todo país com vantagens exclusivas. Assine o LayBack Membership Card e
+                        ganhe vantagens como desconto na compra das cervejas, desconto no consumo nos parks, reservas da
+                        pista de skate para uma session com os amigos, promoções
                         e muito mais!
                     </p>
                 </div>
@@ -603,10 +662,12 @@ include get_template_directory() . ('/templates/nav-home.php');
 
                     <div class="cards-cell col-12 col-md-3  text-center align-self-lg-center">
                         <img src="<?= $directory ?>/src/img/cards/gold.png" alt="" class="img-fluid d-block d-md-none">
-                        <img src="<?= $directory ?>/src/img/cards/silver.png" alt="" class="img-fluid d-none d-md-block">
+                        <img src="<?= $directory ?>/src/img/cards/silver.png" alt=""
+                            class="img-fluid d-none d-md-block">
                     </div>
                     <div class="cards-cell col-12 col-md-6 text-center">
-                        <img src="<?= $directory ?>/src/img/cards/silver.png" alt="" class="img-fluid d-block d-md-none">
+                        <img src="<?= $directory ?>/src/img/cards/silver.png" alt=""
+                            class="img-fluid d-block d-md-none">
                         <img src="<?= $directory ?>/src/img/cards/gold.png" alt="" class="img-fluid d-none d-md-block">
                     </div>
                     <div class="cards-cell col-12 col-md-3 text-center align-self-lg-center">
@@ -614,7 +675,8 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </div>
                 </div>
                 <div class="col-12 text-center mt-5">
-                    <button type="button" class="btn btn-primary bgc-amarelo c-preto upper mt-5" data-toggle="modal" data-target="#interesse">tenho interesse</button>
+                    <button type="button" class="btn btn-primary bgc-amarelo c-preto upper mt-5" data-toggle="modal"
+                        data-target="#interesse">tenho interesse</button>
                 </div>
             </div>
         </div>
@@ -629,7 +691,8 @@ include get_template_directory() . ('/templates/nav-home.php');
                             Vista o estilo<br> de vida LayBack!
                         </h2>
                         <p class="c-branco">LayBack é estilo de vida, e também é estilo de se vestir.<br>
-                            Nós vivemos o que acreditamos e nos vestimos como queremos. Em breve nova loja com camisas, jaquetas, bonés e muito mais para viver o espírito LayBack.
+                            Nós vivemos o que acreditamos e nos vestimos como queremos. Em breve nova loja com camisas,
+                            jaquetas, bonés e muito mais para viver o espírito LayBack.
                         </p>
                         <!-- <a href="https://www.alotbrasil.com.br/layback" class="btn btn-primary bgc-amarelo c-preto upper mt-5" target="_blank">ACESSAR A
                         LOJA</a> -->
@@ -639,7 +702,8 @@ include get_template_directory() . ('/templates/nav-home.php');
             </div>
             <div class="row d-lg-none p-0">
                 <div class="col-12 p-0">
-                    <img src="<?= $directory ?>/src/img/banners/mobile/asset-estilo-layback.png" alt="" class="img-fluid">
+                    <img src="<?= $directory ?>/src/img/banners/mobile/asset-estilo-layback.png" alt=""
+                        class="img-fluid">
                 </div>
             </div>
         </div>
@@ -654,36 +718,67 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
                     <div id="carousel-noticias" class="d-lg-flex">
 
-                        <?php
-                        $maxpost = new WP_Query(array('posts_per_page' => 3));
-                        if ($maxpost->have_posts()) : while ($maxpost->have_posts()) : $maxpost->the_post();
-                        ?>
-                                <div class="col-12 mr-auto col-lg-4">
-                                    <div class="card-noticias">
-                                        <div class="card-image">
-                                            <?php the_post_thumbnail(); ?>
-                                        </div>
-                                        <div class="box-card">
-                                            <span class="c-preto">
-                                                <?php the_title(); ?>
-                                            </span>
-                                            <br>
-                                            <small class="c-preto">
-                                                <?php the_time('F jS, Y'); ?>
-                                            </small>
-                                            <p class="c-preto">
-                                                <?php the_excerpt() ?>
-                                            </p>
-                                            <a href="<?php the_permalink(); ?>">
-                                                Leia mais
-                                                <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                <?php
+                    $maxpost = new WP_Query(array('posts_per_page' => 3));
+                    if ($maxpost->have_posts()) : while ($maxpost->have_posts()) : $maxpost->the_post();
+                    $custom_field = get_field('link_externo');
+                    $format = get_post_format() ? : 'standard'
+                ?>
+                <?php if (has_post_format( 'link' )) :?>
 
-                        <?php endwhile;
-                        endif; ?>
+                        <div class="col-12 mr-auto col-lg-4">
+                            <div class="card-noticias">
+                                <div class="card-image">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="box-card">
+                                    <span class="c-preto">
+                                        <?php the_title(); ?>
+                                    </span>
+                                    <br>
+                                    <small class="c-preto">
+                                        <?php the_time('F jS, Y'); ?>
+                                    </small>
+                                    <p class="c-preto">
+                                        <?php the_excerpt() ?>
+                                    </p>
+                                    <a href="<?php echo $custom_field; ?>">
+                                        Leia mais
+                                        <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php else :?>
+
+                        <div class="col-12 mr-auto col-lg-4">
+                            <div class="card-noticias">
+                                <div class="card-image">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="box-card">
+                                    <span class="c-preto">
+                                        <?php the_title(); ?>
+                                    </span>
+                                    <br>
+                                    <small class="c-preto">
+                                        <?php the_time('F jS, Y'); ?>
+                                    </small>
+                                    <p class="c-preto">
+                                        <?php the_excerpt() ?>
+                                    </p>
+                                    <a href="<?php the_permalink(); ?>">
+                                        Leia mais
+                                        <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php endif;?>
+                <?php endwhile;
+                endif; ?>
 
                     </div>
 
@@ -696,15 +791,18 @@ include get_template_directory() . ('/templates/nav-home.php');
         <div class="container-fluid">
 
             <div class="row p-0 align-content-center justify-content-center">
-                <div id="instafeed" class="instagram-gallery-medium col-12 d-flex align-content-center justify-content-center p-0"></div>
+                <div id="instafeed"
+                    class="instagram-gallery-medium col-12 d-flex align-content-center justify-content-center p-0">
+                </div>
             </div>
             <div class="insta">
                 <h2 class="c-preto m-0">
-                    <a href="https://www.instagram.com/laybackbeer/" target="_blank" rel="noopener noreferrer">@laybackbeer</a>
+                    <a href="https://www.instagram.com/laybackbeer/" target="_blank"
+                        rel="noopener noreferrer">@laybackbeer</a>
                 </h2>
             </div>
         </div>
-</section>
+    </section>
 
 </div>
 
