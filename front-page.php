@@ -718,7 +718,7 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
                     <div id="carousel-noticias" class="d-lg-flex">
 
-                        <?php
+                <?php
                     $maxpost = new WP_Query(array('posts_per_page' => 3));
                     if ($maxpost->have_posts()) : while ($maxpost->have_posts()) : $maxpost->the_post();
                     $custom_field = get_field('link_externo');
@@ -742,21 +742,17 @@ include get_template_directory() . ('/templates/nav-home.php');
                                     </p>
 
                                 <?php if (has_post_format( 'link' )) :?>
-
                                     <a href="<?php echo $custom_field; ?>" target="_blank">
                                         Leia mais
                                         <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
                                     </a>
-
                                 <?php else :?>
-
                                     <a href="<?php echo $custom_field; ?>" target="_blank">
                                         Leia mais
                                         <img src="<?php the_permalink(); ?>/src/img/icons/icon_arrow.svg" alt="">
                                     </a>
-
                                 <?php endif;?>
-                                
+
                                 </div>
                             </div>
                         </div>

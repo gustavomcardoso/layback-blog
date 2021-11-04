@@ -1,32 +1,21 @@
 <?php
 /**
  * Index template
- *
- * @author   <Author>
- * @version  1.0.0
- * @package  <Package>
  */ 
-
 get_header();
 include get_template_directory() . ('/templates/nav-blog.php');
+
 $custom_field = get_field('link_externo');
-
-
+$maxpost = new WP_Query( array( 'posts_per_page' => 3 ) ); 
+$i = 0;
 
 ?>
 
- 
-
-
 <div id="fullpageblog">
-	
 	<!-- Start the Loop. -->
 <?php
-
-$maxpost = new WP_Query( array( 'posts_per_page' => 3 ) ); 
-$i = 0;
-if ( $maxpost-> have_posts() ) : while ( $maxpost-> have_posts() ) : $maxpost-> the_post();
-$do_not_duplicate[] = $post->ID;
+	if ( $maxpost-> have_posts() ) : while ( $maxpost-> have_posts() ) : $maxpost-> the_post();
+	$do_not_duplicate[] = $post->ID;
 ?>
 
 <?php if ($i == 1) :?>
@@ -65,11 +54,8 @@ $do_not_duplicate[] = $post->ID;
 		</section>
 
 
-<?php
-$i++;
-endwhile; else : ?>
-<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-
+<?php $i++; endwhile; else :?>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
 
 	<section class="mt-5 mt-lg-0 mb-5 pb-5" id="carouselblog">
