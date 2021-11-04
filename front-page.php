@@ -718,12 +718,11 @@ include get_template_directory() . ('/templates/nav-home.php');
                     </h2>
                     <div id="carousel-noticias" class="d-lg-flex">
 
-                <?php
+                        <?php
                     $maxpost = new WP_Query(array('posts_per_page' => 3));
                     if ($maxpost->have_posts()) : while ($maxpost->have_posts()) : $maxpost->the_post();
                     $custom_field = get_field('link_externo');
                 ?>
-                <?php if (has_post_format( 'link' )) :?>
 
                         <div class="col-12 mr-auto col-lg-4">
                             <div class="card-noticias">
@@ -741,42 +740,28 @@ include get_template_directory() . ('/templates/nav-home.php');
                                     <p class="c-preto">
                                         <?php the_excerpt() ?>
                                     </p>
+
+                                <?php if (has_post_format( 'link' )) :?>
+
                                     <a href="<?php echo $custom_field; ?>" target="_blank">
                                         Leia mais
                                         <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                        </div>
 
-                    <?php else :?>
+                                <?php else :?>
 
-                        <div class="col-12 mr-auto col-lg-4">
-                            <div class="card-noticias">
-                                <div class="card-image">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                                <div class="box-card">
-                                    <span class="c-preto">
-                                        <?php the_title(); ?>
-                                    </span>
-                                    <br>
-                                    <small class="c-preto">
-                                        <?php the_time('F jS, Y'); ?>
-                                    </small>
-                                    <p class="c-preto">
-                                        <?php the_excerpt() ?>
-                                    </p>
-                                    <a href="<?php the_permalink(); ?>" >
+                                    <a href="<?php echo $custom_field; ?>" target="_blank">
                                         Leia mais
-                                        <img src="<?= $directory ?>/src/img/icons/icon_arrow.svg" alt="">
+                                        <img src="<?php the_permalink(); ?>/src/img/icons/icon_arrow.svg" alt="">
                                     </a>
+
+                                <?php endif;?>
+                                
                                 </div>
                             </div>
                         </div>
 
-                    <?php endif;?>
-                <?php endwhile;
+                        <?php endwhile;
                 endif; ?>
 
                     </div>
