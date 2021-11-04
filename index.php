@@ -9,6 +9,7 @@
 
 get_header();
 include get_template_directory() . ('/templates/nav-blog.php');
+$custom_field = get_field('link_externo');
 
 
 
@@ -22,7 +23,6 @@ include get_template_directory() . ('/templates/nav-blog.php');
 	<!-- Start the Loop. -->
 <?php
 
-$custom_field = get_field('link_externo');
 $maxpost = new WP_Query( array( 'posts_per_page' => 3 ) ); 
 $i = 0;
 if ( $maxpost-> have_posts() ) : while ( $maxpost-> have_posts() ) : $maxpost-> the_post();
